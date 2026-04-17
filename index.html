@@ -3,787 +3,843 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Bright Beam Dental Care - Premium dental clinic on Airport Road, Ihama, Benin City. Expert dental care you can trust." />
-  <title>Bright Beam Dental Care | Airport Road, Benin City</title>
+  <meta name="description" content="Bright Beam Dental Care – Premium dental clinic on Airport Road, Ihama, Benin City. Book a consultation today for expert dental care." />
+  <title>Bright Beam Dental Care | Premium Dental Clinic, Benin City</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Open+Sans:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- BACK TO TOP -->
+  <!-- BACK TO TOP BUTTON -->
   <button class="back-to-top" id="backToTop" aria-label="Back to top">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
   </button>
 
   <!-- NAVBAR -->
   <header class="navbar" id="navbar">
-    <div class="container nav-inner">
+    <div class="nav-container">
       <a href="#home" class="nav-logo">
-        <div class="logo-icon-wrap">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="24" cy="24" r="24" fill="#1a3a5c"/>
-            <path d="M16 20c0-4.418 3.582-8 8-8s8 3.582 8 8c0 3.5-1.5 5.8-3.2 8.5C27 31.5 25.5 34 24 36c-1.5-2-3-4.5-4.8-7.5C17.5 25.8 16 23.5 16 20z" fill="#f5c518"/>
-            <circle cx="24" cy="20" r="3" fill="#fff"/>
-            <path d="M21 20c0-1.657 1.343-3 3-3" stroke="#1a3a5c" stroke-width="1.2" stroke-linecap="round"/>
+        <div class="logo-mark">
+          <svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="22" fill="#0A2540" stroke="#F5C842" stroke-width="2"/>
+            <path d="M16 18C16 14.686 18.686 12 22 12C23.657 12 25.157 12.672 26.243 13.757C27.329 12.672 28.829 12 30.486 12C33.8 12 36.486 14.686 36.486 18C36.486 20.5 35.2 22.7 33.243 24C35.2 25.3 36.486 27.5 36.486 30C36.486 33.314 33.8 36 30.486 36C28.829 36 27.329 35.328 26.243 34.243C25.157 35.328 23.657 36 22 36C18.686 36 16 33.314 16 30C16 27.5 17.286 25.3 19.243 24C17.286 22.7 16 20.5 16 18Z" fill="#F5C842" opacity="0.9"/>
+            <circle cx="24" cy="24" r="3" fill="#0A2540"/>
           </svg>
         </div>
-        <div class="logo-text-wrap">
-          <span class="logo-primary">BrightBeam</span>
-          <span class="logo-secondary">Dental Care</span>
+        <div class="logo-text">
+          <span class="logo-brand">Bright Beam</span>
+          <span class="logo-sub">Dental Care</span>
         </div>
       </a>
 
       <nav class="nav-links" id="navLinks">
-        <a href="#home" class="nav-link">Home</a>
+        <a href="#home" class="nav-link active">Home</a>
         <a href="#services" class="nav-link">Services</a>
         <a href="#consultation" class="nav-link">Consultation</a>
         <a href="#contact" class="nav-link">Contact</a>
-        <a href="#consultation" class="btn btn-nav-cta">Book Now</a>
+        <a href="#consultation" class="nav-cta-btn">Book Now</a>
       </nav>
 
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- HERO SECTION -->
   <section class="hero" id="home">
-    <div class="hero-slides-wrap" id="heroSlider">
+    <div class="hero-slider" id="heroSlider">
 
-      <div class="hero-slide active" data-slide="0">
-        <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1800&q=85')"></div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content container">
-          <span class="hero-badge">Trusted Dental Excellence</span>
-          <h1>Your Smile Deserves<br><em>World-Class Care</em></h1>
-          <p>Expert dentistry delivered with precision, compassion, and the latest clinical technology — right here in Benin City.</p>
-          <div class="hero-btns">
-            <a href="#consultation" class="btn btn-primary">Book Consultation</a>
-            <a href="#about" class="btn btn-ghost">Meet Our Dentist</a>
+      <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1600&auto=format&fit=crop&q=85')">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <span class="slide-tag">Benin City's Premier Dental Clinic</span>
+          <h1>Your Smile Deserves<br>Expert Care</h1>
+          <p>Professional dental treatment tailored to your comfort and confidence. Serving patients from Benin City and across Nigeria.</p>
+          <div class="hero-actions">
+            <a href="#consultation" class="btn-primary">Book Consultation — N10,000</a>
+            <a href="#services" class="btn-ghost">View Our Services</a>
           </div>
         </div>
       </div>
 
-      <div class="hero-slide" data-slide="1">
-        <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1800&q=85')"></div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content container">
-          <span class="hero-badge">Modern Dental Technology</span>
-          <h1>Advanced Treatment,<br><em>Gentle Approach</em></h1>
-          <p>From routine cleanings to complex restorations, we bring hospital-grade precision to every patient, every visit.</p>
-          <div class="hero-btns">
-            <a href="#consultation" class="btn btn-primary">Book Consultation</a>
-            <a href="#services" class="btn btn-ghost">View Services</a>
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1588776814546-1ffbb82bf3ce?w=1600&auto=format&fit=crop&q=85')">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <span class="slide-tag">Modern Equipment. Gentle Hands.</span>
+          <h1>Advanced Dentistry<br>in a Calm Environment</h1>
+          <p>State-of-the-art dental technology combined with a patient-first approach. We make every visit comfortable and stress-free.</p>
+          <div class="hero-actions">
+            <a href="#consultation" class="btn-primary">Book Consultation — N10,000</a>
+            <a href="#about" class="btn-ghost">Meet Our Dentist</a>
           </div>
         </div>
       </div>
 
-      <div class="hero-slide" data-slide="2">
-        <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=1800&q=85')"></div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content container">
-          <span class="hero-badge">Patient-Centered Practice</span>
-          <h1>Comfortable Care,<br><em>Exceptional Results</em></h1>
-          <p>We prioritize your comfort at every step. Our clinic is designed to make you feel at ease from arrival to discharge.</p>
-          <div class="hero-btns">
-            <a href="#consultation" class="btn btn-primary">Book Consultation</a>
-            <a href="#testimonials" class="btn btn-ghost">Patient Stories</a>
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=1600&auto=format&fit=crop&q=85')">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <span class="slide-tag">Transformation You Can See</span>
+          <h1>Smile Confidently.<br>Live Fully.</h1>
+          <p>From routine cleanings to complete smile makeovers — we provide comprehensive dental solutions at one trusted location in Benin City.</p>
+          <div class="hero-actions">
+            <a href="#consultation" class="btn-primary">Book Consultation — N10,000</a>
+            <a href="#before-after" class="btn-ghost">See Transformations</a>
           </div>
         </div>
       </div>
 
     </div>
 
-    <button class="hero-arrow hero-prev" id="heroPrev" aria-label="Previous">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-    </button>
-    <button class="hero-arrow hero-next" id="heroNext" aria-label="Next">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-    </button>
-    <div class="hero-dots" id="heroDots">
-      <button class="hero-dot active" data-index="0" aria-label="Slide 1"></button>
-      <button class="hero-dot" data-index="1" aria-label="Slide 2"></button>
-      <button class="hero-dot" data-index="2" aria-label="Slide 3"></button>
+    <div class="slider-controls">
+      <button class="slider-btn prev" id="prevSlide" aria-label="Previous slide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+      <div class="slider-dots" id="sliderDots">
+        <button class="dot active" aria-label="Slide 1"></button>
+        <button class="dot" aria-label="Slide 2"></button>
+        <button class="dot" aria-label="Slide 3"></button>
+      </div>
+      <button class="slider-btn next" id="nextSlide" aria-label="Next slide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-line"></div>
     </div>
   </section>
 
   <!-- TRUST STRIP -->
   <section class="trust-strip">
-    <div class="container trust-grid">
-      <div class="trust-item">
-        <div class="trust-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    <div class="container">
+      <div class="trust-items">
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="trust-text">
+            <strong>Certified Care</strong>
+            <span>Registered & professionally accredited dental practice</span>
+          </div>
         </div>
-        <div class="trust-content">
-          <strong>Certified Care</strong>
-          <span>Licensed and accredited practitioners</span>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+          </div>
+          <div class="trust-text">
+            <strong>Modern Equipment</strong>
+            <span>Digital X-rays, sterilized tools, up-to-date dental tech</span>
+          </div>
         </div>
-      </div>
-      <div class="trust-divider"></div>
-      <div class="trust-item">
-        <div class="trust-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </div>
+          <div class="trust-text">
+            <strong>Patient-First Service</strong>
+            <span>Personalized treatment plans with compassionate care</span>
+          </div>
         </div>
-        <div class="trust-content">
-          <strong>Modern Equipment</strong>
-          <span>Digital X-rays and advanced clinical tools</span>
-        </div>
-      </div>
-      <div class="trust-divider"></div>
-      <div class="trust-item">
-        <div class="trust-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-        </div>
-        <div class="trust-content">
-          <strong>Patient-Focused</strong>
-          <span>Comfort and care at every step</span>
-        </div>
-      </div>
-      <div class="trust-divider"></div>
-      <div class="trust-item">
-        <div class="trust-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-        </div>
-        <div class="trust-content">
-          <strong>Affordable Options</strong>
-          <span>Transparent pricing, no hidden charges</span>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          </div>
+          <div class="trust-text">
+            <strong>Transparent Pricing</strong>
+            <span>Honest, affordable consultations starting at N10,000</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT + DOCTOR -->
+  <!-- ABOUT + DOCTOR SECTION -->
   <section class="about" id="about">
-    <div class="container about-wrap">
-      <div class="about-image-col">
-        <div class="about-img-frame">
-          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=700&q=85" alt="Lead Dentist at Bright Beam Dental Care" loading="lazy" />
-          <div class="about-img-tag">
-            <strong>10+</strong>
-            <span>Years of Excellence</span>
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-col">
+          <div class="about-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=700&auto=format&fit=crop&q=85" alt="Lead Dentist at Bright Beam Dental Care" loading="lazy" />
+            <div class="about-img-badge">
+              <strong>10+</strong>
+              <span>Years Experience</span>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="about-content-col">
-        <span class="section-badge">About Us</span>
-        <h2 class="section-title">Where Clinical Precision<br>Meets Compassionate Care</h2>
-        <p class="about-lead">Bright Beam Dental Care is a premier dental practice on Airport Road, Ihama, Benin City. We are built on a foundation of clinical excellence, modern technology, and genuine patient-first values.</p>
 
-        <div class="doctor-block">
-          <div class="doctor-header">
-            <div class="doctor-avatar">
-              <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=200&q=85" alt="Lead Dentist" loading="lazy"/>
-            </div>
-            <div>
-              <h3>Meet the Lead Dentist</h3>
-              <span class="doctor-title-tag">BDS — Senior Dental Surgeon</span>
-            </div>
-          </div>
-          <p class="doctor-bio">With over a decade of clinical experience in restorative, cosmetic, and preventive dentistry, our lead dentist combines technical excellence with a genuinely patient-first approach — making every visit as comfortable as it is effective.</p>
-          <ul class="highlights-list">
+        <div class="about-content-col">
+          <span class="section-label">About the Practice</span>
+          <h2>Built on Trust,<br>Driven by Excellence</h2>
+          <p class="about-intro">Bright Beam Dental Care is a full-service dental clinic located at Airport Road, Ihama, Benin City. We serve patients from across Edo State and beyond with a commitment to clinical excellence and patient dignity.</p>
+
+          <div class="about-divider"></div>
+
+          <span class="section-label">Meet the Lead Dentist</span>
+          <h3>Dr. [Dentist Name], BDS, FWACS</h3>
+          <p>Our lead dentist brings over a decade of experience in general, cosmetic, and restorative dentistry. Trained at a leading Nigerian dental school and holding postgraduate certification, Dr. [Name] combines clinical expertise with a calm, reassuring patient manner.</p>
+
+          <ul class="about-highlights">
             <li>
-              <span class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-              BDS — Bachelor of Dental Surgery
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              BDS (Bachelor of Dental Surgery), University of Benin
             </li>
             <li>
-              <span class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-              Member, Nigerian Dental Association
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Fellow, West African College of Surgeons (FWACS)
             </li>
             <li>
-              <span class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-              Specialist in Cosmetic and Restorative Dentistry
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Specialist in cosmetic & restorative dentistry
             </li>
             <li>
-              <span class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
               500+ successful smile transformations
             </li>
           </ul>
+
+          <a href="#consultation" class="btn-primary">Book a Consultation</a>
         </div>
-        <a href="#consultation" class="btn btn-primary">Book with Our Dentist</a>
       </div>
     </div>
   </section>
 
-  <!-- IMAGE TICKER -->
+  <!-- IMAGE TICKER / GALLERY STRIP -->
   <section class="ticker-section">
+    <div class="ticker-label">
+      <span>Our Clinic &amp; Patients</span>
+    </div>
     <div class="ticker-wrapper">
       <div class="ticker-track" id="tickerTrack">
-        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=500&q=80" alt="Clinic interior" loading="lazy"/></div>
-        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=500&q=80" alt="Consultation room" loading="lazy"/></div>
-        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=500&q=80" alt="Dental equipment" loading="lazy"/></div>
-        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=500&q=80" alt="Patient care" loading="lazy"/></div>
-        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=500&q=80" alt="Dental procedure" loading="lazy"/></div>
-        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=500&q=80" alt="Smile result" loading="lazy"/></div>
-        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=500&q=80" alt="Clinic interior" loading="lazy"/></div>
-        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=500&q=80" alt="Consultation room" loading="lazy"/></div>
-        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=500&q=80" alt="Dental equipment" loading="lazy"/></div>
-        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=500&q=80" alt="Patient care" loading="lazy"/></div>
-        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=500&q=80" alt="Dental procedure" loading="lazy"/></div>
-        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=500&q=80" alt="Smile result" loading="lazy"/></div>
+        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400&h=280&auto=format&fit=crop&q=80" alt="Dental clinic interior" /></div>
+        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=400&h=280&auto=format&fit=crop&q=80" alt="Dental procedure" /></div>
+        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1588776814546-1ffbb82bf3ce?w=400&h=280&auto=format&fit=crop&q=80" alt="Patient consultation" /></div>
+        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=400&h=280&auto=format&fit=crop&q=80" alt="Dental equipment" /></div>
+        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=280&auto=format&fit=crop&q=80" alt="Clinic environment" /></div>
+        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=280&auto=format&fit=crop&q=80" alt="Happy dental patient" /></div>
+        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=280&auto=format&fit=crop&q=80" alt="Dentist at work" /></div>
+        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=400&h=280&auto=format&fit=crop&q=80" alt="Smile result" /></div>
+        <!-- Duplicated for infinite loop -->
+        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400&h=280&auto=format&fit=crop&q=80" alt="Dental clinic interior" /></div>
+        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=400&h=280&auto=format&fit=crop&q=80" alt="Dental procedure" /></div>
+        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1588776814546-1ffbb82bf3ce?w=400&h=280&auto=format&fit=crop&q=80" alt="Patient consultation" /></div>
+        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=400&h=280&auto=format&fit=crop&q=80" alt="Dental equipment" /></div>
+        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=280&auto=format&fit=crop&q=80" alt="Clinic environment" /></div>
+        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=280&auto=format&fit=crop&q=80" alt="Happy dental patient" /></div>
+        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=280&auto=format&fit=crop&q=80" alt="Dentist at work" /></div>
+        <div class="ticker-item"><img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=400&h=280&auto=format&fit=crop&q=80" alt="Smile result" /></div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICES -->
+  <!-- SERVICES SECTION -->
   <section class="services" id="services">
     <div class="container">
       <div class="section-header">
-        <span class="section-badge">What We Offer</span>
-        <h2 class="section-title">Comprehensive Dental Services</h2>
-        <p class="section-sub">From prevention to full smile transformation — our full-spectrum services cover every stage of your oral health journey.</p>
+        <span class="section-label">What We Offer</span>
+        <h2>Comprehensive Dental Services</h2>
+        <p>Every treatment is performed with precision and care, using the most current dental techniques available in Nigeria.</p>
       </div>
+
       <div class="services-grid">
         <div class="service-card">
-          <div class="service-img-wrap">
-            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80" alt="General Dentistry" loading="lazy"/>
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=500&h=300&auto=format&fit=crop&q=80" alt="General Dentistry" loading="lazy" />
           </div>
           <div class="service-body">
             <h3>General Dentistry</h3>
-            <p>Routine examinations, professional cleanings, fillings, and preventive care to maintain your long-term oral health.</p>
+            <p>Routine examinations, professional cleaning, fillings, and preventive care to maintain your long-term oral health.</p>
+            <a href="#consultation" class="service-link">Book This Service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
           </div>
         </div>
+
         <div class="service-card">
-          <div class="service-img-wrap">
-            <img src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?w=600&q=80" alt="Cosmetic Dentistry" loading="lazy"/>
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=500&h=300&auto=format&fit=crop&q=80" alt="Teeth Whitening" loading="lazy" />
           </div>
           <div class="service-body">
-            <h3>Cosmetic Dentistry</h3>
-            <p>Teeth whitening, veneers, bonding, and smile design that enhance the natural aesthetics of your smile.</p>
+            <h3>Teeth Whitening</h3>
+            <p>Professional-grade whitening treatments that deliver visible, lasting results — safely and comfortably.</p>
+            <a href="#consultation" class="service-link">Book This Service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
           </div>
         </div>
+
         <div class="service-card">
-          <div class="service-img-wrap">
-            <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=600&q=80" alt="Dental Implants" loading="lazy"/>
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=500&h=300&auto=format&fit=crop&q=80" alt="Dental Implants" loading="lazy" />
           </div>
           <div class="service-body">
             <h3>Dental Implants</h3>
-            <p>Permanent, natural-looking tooth replacements anchored into the jawbone for superior stability and longevity.</p>
+            <p>Permanent tooth replacement solutions that look, feel, and function exactly like natural teeth.</p>
+            <a href="#consultation" class="service-link">Book This Service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
           </div>
         </div>
+
         <div class="service-card">
-          <div class="service-img-wrap">
-            <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?w=600&q=80" alt="Orthodontics" loading="lazy"/>
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1588776814546-1ffbb82bf3ce?w=500&h=300&auto=format&fit=crop&q=80" alt="Orthodontics" loading="lazy" />
           </div>
           <div class="service-body">
             <h3>Orthodontics</h3>
-            <p>Traditional braces and clear aligner solutions for correcting misalignment and achieving a balanced, healthy bite.</p>
+            <p>Braces and aligner therapy to straighten teeth and correct bite issues for adults and children.</p>
+            <a href="#consultation" class="service-link">Book This Service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
           </div>
         </div>
+
         <div class="service-card">
-          <div class="service-img-wrap">
-            <img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=600&q=80" alt="Pediatric Dentistry" loading="lazy"/>
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=500&h=300&auto=format&fit=crop&q=80" alt="Root Canal Treatment" loading="lazy" />
           </div>
           <div class="service-body">
-            <h3>Pediatric Dentistry</h3>
-            <p>Gentle, child-friendly dental care that builds healthy habits and positive dental experiences from an early age.</p>
+            <h3>Root Canal Treatment</h3>
+            <p>Pain-free endodontic therapy to save infected or severely damaged teeth using modern techniques.</p>
+            <a href="#consultation" class="service-link">Book This Service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
           </div>
         </div>
+
         <div class="service-card">
-          <div class="service-img-wrap">
-            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80" alt="Emergency Care" loading="lazy"/>
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=500&h=300&auto=format&fit=crop&q=80" alt="Smile Makeover" loading="lazy" />
           </div>
           <div class="service-body">
-            <h3>Emergency Care</h3>
-            <p>Prompt treatment for toothaches, broken teeth, lost fillings, and urgent dental situations requiring immediate attention.</p>
+            <h3>Smile Makeover</h3>
+            <p>A full cosmetic transformation combining veneers, whitening, contouring, and other procedures customized to your face.</p>
+            <a href="#consultation" class="service-link">Book This Service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
           </div>
         </div>
       </div>
-      <div class="section-cta-center">
-        <a href="services.html" class="btn btn-outline">View All Services</a>
+
+      <div class="services-cta">
+        <a href="services.html" class="btn-outline">View Full Service List</a>
       </div>
     </div>
   </section>
 
-  <!-- BEFORE AND AFTER -->
-  <section class="before-after">
+  <!-- BEFORE & AFTER SECTION -->
+  <section class="before-after" id="before-after">
     <div class="container">
       <div class="section-header">
-        <span class="section-badge">Transformation Results</span>
-        <h2 class="section-title">Real Patients. Real Results.</h2>
-        <p class="section-sub">Every smile tells a story. These are real transformations achieved by our clinical team.</p>
+        <span class="section-label">Real Results</span>
+        <h2>Before &amp; After Transformations</h2>
+        <p>Every smile you see here represents a real patient journey — from concern to confidence.</p>
       </div>
+
       <div class="ba-grid">
         <div class="ba-card">
           <div class="ba-images">
-            <div class="ba-col">
-              <span class="ba-label">Before</span>
-              <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=500&q=80" alt="Before dental treatment" loading="lazy"/>
+            <div class="ba-side">
+              <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=400&h=300&auto=format&fit=crop&q=80" alt="Before teeth whitening" loading="lazy" />
+              <span class="ba-label before">Before</span>
             </div>
-            <div class="ba-sep"></div>
-            <div class="ba-col">
-              <span class="ba-label ba-label-after">After</span>
-              <img src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?w=500&q=80" alt="After dental treatment" loading="lazy"/>
+            <div class="ba-divider-line"></div>
+            <div class="ba-side">
+              <img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=400&h=300&auto=format&fit=crop&q=80" alt="After teeth whitening" loading="lazy" />
+              <span class="ba-label after">After</span>
             </div>
           </div>
-          <div class="ba-info">
+          <div class="ba-caption">
+            <strong>Teeth Whitening</strong>
+            <p>3-session professional whitening treatment. Visible 8-shade improvement in color.</p>
+          </div>
+        </div>
+
+        <div class="ba-card">
+          <div class="ba-images">
+            <div class="ba-side">
+              <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&auto=format&fit=crop&q=80" alt="Before smile makeover" loading="lazy" />
+              <span class="ba-label before">Before</span>
+            </div>
+            <div class="ba-divider-line"></div>
+            <div class="ba-side">
+              <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=300&auto=format&fit=crop&q=80" alt="After smile makeover" loading="lazy" />
+              <span class="ba-label after">After</span>
+            </div>
+          </div>
+          <div class="ba-caption">
             <strong>Smile Makeover</strong>
-            <span>Veneers and whitening — 3-session treatment</span>
+            <p>Porcelain veneers combined with gum contouring for a natural, balanced smile.</p>
           </div>
         </div>
+
         <div class="ba-card">
           <div class="ba-images">
-            <div class="ba-col">
-              <span class="ba-label">Before</span>
-              <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?w=500&q=80" alt="Before orthodontic treatment" loading="lazy"/>
+            <div class="ba-side">
+              <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=400&h=300&auto=format&fit=crop&q=80" alt="Before dental implant" loading="lazy" />
+              <span class="ba-label before">Before</span>
             </div>
-            <div class="ba-sep"></div>
-            <div class="ba-col">
-              <span class="ba-label ba-label-after">After</span>
-              <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=500&q=80" alt="After orthodontic treatment" loading="lazy"/>
-            </div>
-          </div>
-          <div class="ba-info">
-            <strong>Alignment Correction</strong>
-            <span>Clear aligners — 8-month treatment plan</span>
-          </div>
-        </div>
-        <div class="ba-card">
-          <div class="ba-images">
-            <div class="ba-col">
-              <span class="ba-label">Before</span>
-              <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=500&q=80" alt="Before implant" loading="lazy"/>
-            </div>
-            <div class="ba-sep"></div>
-            <div class="ba-col">
-              <span class="ba-label ba-label-after">After</span>
-              <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=500&q=80" alt="After implant" loading="lazy"/>
+            <div class="ba-divider-line"></div>
+            <div class="ba-side">
+              <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=300&auto=format&fit=crop&q=80" alt="After dental implant" loading="lazy" />
+              <span class="ba-label after">After</span>
             </div>
           </div>
-          <div class="ba-info">
-            <strong>Implant Restoration</strong>
-            <span>Single dental implant — permanent solution</span>
+          <div class="ba-caption">
+            <strong>Dental Implant</strong>
+            <p>Single-tooth implant restoring full function. Patient reported complete comfort within 6 weeks.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CONSULTATION FORM -->
+  <!-- CONSULTATION SECTION -->
   <section class="consultation" id="consultation">
-    <div class="container consult-wrap">
-      <div class="consult-left">
-        <span class="section-badge section-badge-light">Schedule a Visit</span>
-        <h2 class="section-title section-title-light">Ready to Transform<br>Your Smile?</h2>
-        <p class="consult-desc">Take the first step toward better oral health. Our team will reach out to confirm your appointment and answer any questions before your visit.</p>
-        <ul class="consult-perks">
-          <li>
-            <span class="perk-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-            No consultation fee for new patients
-          </li>
-          <li>
-            <span class="perk-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-            Flexible appointment slots available
-          </li>
-          <li>
-            <span class="perk-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
-            Full oral health assessment included
-          </li>
-        </ul>
-        <a href="tel:07039625531" class="consult-phone-link">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 5.73 5.73l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-          07039625531
-        </a>
-      </div>
-      <div class="consult-right">
-        <div class="consult-form-card">
-          <h3>Request an Appointment</h3>
-          <form class="consult-form" id="consultForm" novalidate>
+    <div class="container">
+      <div class="consultation-grid">
+        <div class="consultation-info">
+          <span class="section-label light">Book Your Visit</span>
+          <h2>Start Your Journey<br>to a Better Smile</h2>
+          <p>Our consultation fee is <strong>N10,000</strong> — payable on arrival or via transfer before your appointment. Patients from across Nigeria are welcome to book online.</p>
+
+          <div class="consult-details">
+            <div class="consult-detail-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>Mon – Sat: 8:00 AM – 6:00 PM</span>
+            </div>
+            <div class="consult-detail-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Airport Road, Ihama, Benin City</span>
+            </div>
+            <div class="consult-detail-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.57 3.18 2 2 0 0 1 3.55 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.64A16 16 0 0 0 15.36 16.09l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>07039625531</span>
+            </div>
+          </div>
+
+          <p class="consult-note">After submitting, our team will contact you within 24 hours to confirm your appointment. Online consultations are also available via video call.</p>
+        </div>
+
+        <div class="consultation-form-wrap">
+          <form class="consultation-form" id="consultationForm" novalidate>
+            <h3>Request an Appointment</h3>
+            <p class="form-subtitle">Fill in your details and we will get back to you promptly.</p>
+
             <div class="form-group">
               <label for="fullName">Full Name</label>
-              <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required autocomplete="name"/>
+              <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required />
             </div>
+
             <div class="form-group">
               <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" placeholder="e.g. 08012345678" required autocomplete="tel"/>
+              <input type="tel" id="phone" name="phone" placeholder="e.g. 08012345678" required />
             </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" />
+            </div>
+
             <div class="form-group">
               <label for="service">Service Required</label>
               <select id="service" name="service" required>
                 <option value="" disabled selected>Select a service</option>
-                <option>General Check-up and Cleaning</option>
-                <option>Teeth Whitening</option>
-                <option>Dental Implants</option>
-                <option>Veneers and Cosmetic Work</option>
-                <option>Orthodontics / Braces</option>
-                <option>Tooth Extraction</option>
-                <option>Emergency Dental Care</option>
-                <option>Pediatric Dentistry</option>
-                <option>Other / Not Sure</option>
+                <option value="general">General Dentistry / Check-up</option>
+                <option value="whitening">Teeth Whitening</option>
+                <option value="implants">Dental Implants</option>
+                <option value="orthodontics">Orthodontics / Braces</option>
+                <option value="root-canal">Root Canal Treatment</option>
+                <option value="makeover">Smile Makeover</option>
+                <option value="extraction">Tooth Extraction</option>
+                <option value="emergency">Dental Emergency</option>
+                <option value="other">Other / Not Sure</option>
               </select>
             </div>
+
             <div class="form-group">
-              <label for="message">Additional Notes (Optional)</label>
-              <textarea id="message" name="message" placeholder="Describe your concern or any relevant information..." rows="3"></textarea>
+              <label for="message">Additional Notes <span class="optional">(optional)</span></label>
+              <textarea id="message" name="message" rows="3" placeholder="Describe your concern or any specific request..."></textarea>
             </div>
-            <button type="submit" class="btn btn-primary btn-full">Request Appointment</button>
-            <p class="form-note">We typically confirm within 2 hours during working hours. Your information is strictly confidential.</p>
-            <div class="form-success" id="formSuccess">
-              Your appointment request has been received. Our team will contact you shortly to confirm your visit.
+
+            <div class="form-note">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+              Consultation fee: <strong>N10,000</strong>. Payable on arrival or before via bank transfer. Patients outside Benin City can opt for an online video consultation.
             </div>
+
+            <button type="submit" class="btn-primary full-width">Submit Booking Request</button>
+            <p class="form-privacy">Your information is private and will only be used to schedule your appointment.</p>
           </form>
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <h3>Booking Request Received</h3>
+            <p>Thank you. Our team will contact you within 24 hours to confirm your appointment. You may also reach us directly at <strong>07039625531</strong>.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
+  <!-- TESTIMONIALS SECTION -->
   <section class="testimonials" id="testimonials">
     <div class="container">
       <div class="section-header">
-        <span class="section-badge">Patient Reviews</span>
-        <h2 class="section-title">What Our Patients Say</h2>
-        <p class="section-sub">Real experiences from real patients who trust Bright Beam Dental Care.</p>
+        <span class="section-label">Patient Reviews</span>
+        <h2>What Our Patients Say</h2>
+        <p>Honest experiences shared by real patients who trusted us with their dental health.</p>
       </div>
-      <div class="reviews-grid" id="reviewsGrid">
 
-        <div class="review-card">
-          <div class="review-top">
-            <div class="stars">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            </div>
-            <span class="google-tag">Google</span>
+      <div class="testimonials-grid" id="testimonialsGrid">
+
+        <div class="testimonial-card">
+          <div class="stars">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F5C842" stroke="#F5C842" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F5C842" stroke="#F5C842" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F5C842" stroke="#F5C842" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F5C842" stroke="#F5C842" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F5C842" stroke="#F5C842" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
           </div>
-          <p class="review-text">"I had severe dental anxiety before coming here. The doctor was incredibly patient and walked me through everything. The clinic is spotless and the equipment looks very professional. I have already recommended Bright Beam to three friends."</p>
-          <div class="review-author">
-            <div class="review-avatar">AO</div>
-            <div class="review-meta">
+          <p>"I was extremely nervous about getting a root canal, but the entire team at Bright Beam made it so comfortable. Dr. [Name] walked me through every step. The result was perfect and pain-free."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">AO</div>
+            <div>
               <strong>Adaeze Okonkwo</strong>
-              <span>Benin City</span>
+              <span>Lagos, Nigeria</span>
             </div>
           </div>
         </div>
 
-        <div class="review-card">
-          <div class="review-top">
-            <div class="stars">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            </div>
-            <span class="google-tag">Google</span>
+        <div class="testimonial-card">
+          <div class="stars">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F5C842" stroke="#F5C842" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F5C842" stroke="#F5C842" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F5C842" stroke="#F5C842" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F5C842" stroke="#F5C842" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F5C842" stroke="#F5C842" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
           </div>
-          <p class="review-text">"Best dental experience I have had in Benin City. My implants were done in two sessions and the results look completely natural. The staff made me comfortable throughout and the doctor explained every procedure clearly. Worth every naira."</p>
-          <div class="review-author">
-            <div class="review-avatar">EI</div>
-            <div class="review-meta">
-              <strong>Emmanuel Ighalo</strong>
-              <span>GRA, Benin City</span>
+          <p>"My teeth whitening results were beyond what I expected. In three sessions, my smile completely changed. The clinic is very clean, professional, and the staff genuinely care about you."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">EI</div>
+            <div>
+              <strong>Emeka Igwe</strong>
+              <span>Benin City, Edo State</span>
             </div>
           </div>
         </div>
 
-        <div class="review-card">
-          <div class="review-top">
-            <div class="stars">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            </div>
-            <span class="google-tag">Google</span>
+        <div class="testimonial-card">
+          <div class="stars">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F5C842" stroke="#F5C842" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F5C842" stroke="#F5C842" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F5C842" stroke="#F5C842" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F5C842" stroke="#F5C842" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F5C842" stroke="#F5C842" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
           </div>
-          <p class="review-text">"I brought my 8-year-old daughter here and she left without any tears — that says everything. The doctor has a gift for putting young patients at ease. The clinic is clean, organized, and very professional. We are now regular patients."</p>
-          <div class="review-author">
-            <div class="review-avatar">FO</div>
-            <div class="review-meta">
-              <strong>Funmilayo Osadolor</strong>
-              <span>Uselu, Benin City</span>
+          <p>"I booked an online consultation from Abuja and everything was handled smoothly via video call. The doctor gave me a detailed treatment plan before I even traveled to Benin. World-class service."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">FS</div>
+            <div>
+              <strong>Fatima Suleiman</strong>
+              <span>Abuja, Nigeria</span>
             </div>
           </div>
         </div>
 
-        <div class="review-card hidden-review">
-          <div class="review-top">
-            <div class="stars">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            </div>
-            <span class="google-tag">Google</span>
+        <!-- Hidden reviews -->
+        <div class="testimonial-card hidden-review">
+          <div class="stars">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F5C842" stroke="#F5C842" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F5C842" stroke="#F5C842" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F5C842" stroke="#F5C842" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F5C842" stroke="#F5C842" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F5C842" stroke="#F5C842" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
           </div>
-          <p class="review-text">"Had a root canal done here and honestly, it was far less painful than I expected. The doctor was precise, explained each step, and checked in throughout the procedure. Recovery was quick. Highly professional environment."</p>
-          <div class="review-author">
-            <div class="review-avatar">CB</div>
-            <div class="review-meta">
-              <strong>Chukwuemeka Bello</strong>
-              <span>Ikpoba Hill, Benin City</span>
+          <p>"I brought my 10-year-old daughter for her first dental visit and was impressed at how gentle and patient the doctor was. She left with no fear of dentists. That means everything to a parent."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">NO</div>
+            <div>
+              <strong>Ngozi Osaghae</strong>
+              <span>Benin City, Edo State</span>
             </div>
           </div>
         </div>
 
-        <div class="review-card hidden-review">
-          <div class="review-top">
-            <div class="stars">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            </div>
-            <span class="google-tag">Google</span>
+        <div class="testimonial-card hidden-review">
+          <div class="stars">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F5C842" stroke="#F5C842" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F5C842" stroke="#F5C842" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F5C842" stroke="#F5C842" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F5C842" stroke="#F5C842" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#F5C842" stroke="#F5C842" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
           </div>
-          <p class="review-text">"The whitening treatment gave me results I did not expect to see from a local clinic. My teeth are noticeably brighter and the whole process was comfortable. Bright Beam is genuinely world-class for Benin City."</p>
-          <div class="review-author">
-            <div class="review-avatar">NO</div>
-            <div class="review-meta">
-              <strong>Ngozi Okwu</strong>
-              <span>Sapele Road, Benin City</span>
+          <p>"After my smile makeover using veneers, I cried happy tears. It was more than I imagined. The doctor understood exactly what I wanted without me even knowing how to describe it."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">RU</div>
+            <div>
+              <strong>Ruth Udibe</strong>
+              <span>Warri, Delta State</span>
             </div>
           </div>
         </div>
 
       </div>
-      <div class="reviews-toggle-wrap">
-        <button class="btn btn-outline" id="reviewToggle">Show More Reviews</button>
-      </div>
-      <div class="reviews-cta">
-        <p>Ready to begin your own journey?</p>
-        <a href="#consultation" class="btn btn-primary">Book Your Consultation</a>
+
+      <div class="testimonials-actions">
+        <button class="btn-outline" id="toggleReviews">Show More Reviews</button>
+        <a href="#consultation" class="btn-primary">Book Your Consultation</a>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
+  <!-- FAQ SECTION -->
   <section class="faq" id="faq">
-    <div class="container faq-wrap">
-      <div class="section-header">
-        <span class="section-badge">Common Questions</span>
-        <h2 class="section-title">Frequently Asked Questions</h2>
-        <p class="section-sub">Clear answers to the questions we hear most from patients.</p>
-      </div>
-      <div class="faq-list">
-
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            How often should I visit the dentist?
-            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </button>
-          <div class="faq-a">
-            <p>The standard recommendation is a check-up and professional cleaning every six months. Patients with a history of gum disease, frequent cavities, or other ongoing conditions may benefit from quarterly visits. Your dentist will advise the right schedule for your situation during your first consultation.</p>
-          </div>
+    <div class="container">
+      <div class="faq-grid">
+        <div class="faq-header">
+          <span class="section-label">Common Questions</span>
+          <h2>Answers to What<br>Patients Ask Most</h2>
+          <p>We believe informed patients make confident decisions. Find answers to the most common dental questions below.</p>
+          <a href="#consultation" class="btn-primary">Still Have Questions? Book a Consultation</a>
         </div>
 
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            Is teeth whitening safe for everyone?
-            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </button>
-          <div class="faq-a">
-            <p>Professional teeth whitening is safe for most adults with healthy teeth and gums. It is not recommended for pregnant women, children under 16, or patients with extensive restorations on front teeth. A pre-whitening assessment is always performed to ensure the treatment is appropriate and to minimize sensitivity.</p>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How often should I visit the dentist?</span>
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Most patients benefit from a check-up and professional cleaning every 6 months. However, patients with gum disease, active tooth decay, or certain medical conditions may need quarterly visits. Your dentist will recommend a schedule based on your individual oral health status.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Is teeth whitening safe?</span>
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Professional teeth whitening performed in a dental clinic is safe and well-regulated. Some patients experience temporary sensitivity during or after treatment, which typically resolves within 48 hours. We use clinically approved whitening agents and will assess your suitability beforehand to ensure the best and safest results.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Are dental implants painful?</span>
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Dental implant placement is performed under local anesthesia, so you should feel no pain during the procedure. Mild soreness and swelling are normal for 2–4 days after surgery and are easily managed with prescribed medication. Most patients report the procedure is far more comfortable than they anticipated.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>At what age should children first see a dentist?</span>
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>The general recommendation is that a child should have their first dental visit by their first birthday, or within 6 months of the first tooth appearing. Early visits help identify any developmental concerns, establish healthy dental habits, and make children comfortable with dental care before any problems arise.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Can I consult if I am not in Benin City?</span>
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. We offer online video consultations for patients across Nigeria. You can book through our form, pay the N10,000 consultation fee via bank transfer, and meet with Dr. [Name] virtually. Following the consultation, a full treatment plan will be provided so you can plan a visit to the clinic at your convenience.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How long does a root canal treatment take?</span>
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Most root canal treatments are completed in 1–2 appointments, each lasting 60–90 minutes. The number of sessions depends on the tooth's location, the extent of infection, and whether a single or multi-rooted tooth is involved. Modern techniques have significantly reduced treatment time without compromising quality.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What should I do in a dental emergency?</span>
+              <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Call us immediately at 07039625531 or send a WhatsApp message. Do not delay treatment for severe toothache, a knocked-out tooth, a broken crown, or significant swelling, as these conditions can worsen rapidly. For a knocked-out adult tooth, keep it moist (in milk or your saliva) and get to us within 30–60 minutes for the best chance of re-implantation.</p>
+            </div>
           </div>
         </div>
-
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            How long do dental implants last?
-            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </button>
-          <div class="faq-a">
-            <p>Dental implants, when properly cared for, can last a lifetime. The titanium post that integrates into the jawbone is designed to be permanent. The crown placed on top typically lasts 10 to 20 years before it may need replacement due to normal wear. Good oral hygiene and regular check-ups are essential to implant longevity.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            What should I do in a dental emergency?
-            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </button>
-          <div class="faq-a">
-            <p>Call us immediately at 07039625531. For a knocked-out tooth, rinse it gently, keep it moist (in milk or between your cheek and gum), and come in within 30 minutes for the best chance of saving it. Do not take aspirin for dental pain as it can increase bleeding. We prioritize emergency cases and will see you as quickly as possible.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            How do I know if I need a root canal?
-            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </button>
-          <div class="faq-a">
-            <p>Common indicators include severe or persistent toothache, prolonged sensitivity to hot or cold, darkening of the tooth, and swelling or tenderness in surrounding gums. However, some cases require a clinical examination and X-ray to diagnose. Early treatment prevents the infection from spreading and often saves the tooth from extraction.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            Are your services affordable for everyday patients?
-            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </button>
-          <div class="faq-a">
-            <p>We believe quality dental care should be accessible. We offer transparent, itemized pricing with no hidden charges, and our team will always present treatment options at different price points where possible. We also accommodate payment arrangements for more complex treatments. Please speak with our front desk staff to discuss your budget.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            How can I maintain good oral health between visits?
-            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </button>
-          <div class="faq-a">
-            <p>Brush your teeth twice daily with a fluoride toothpaste and a soft-bristled brush. Floss at least once per day to remove plaque between teeth. Limit sugary and acidic foods and drinks. Drink plenty of water. Avoid tobacco in any form. Replace your toothbrush every three to four months. And most importantly, attend your regular scheduled check-ups.</p>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ORAL HEALTH EDUCATION -->
-  <section class="education">
+  <!-- ORAL HEALTH EDUCATION SECTION -->
+  <section class="education" id="education">
     <div class="container">
       <div class="section-header">
-        <span class="section-badge">Oral Health Hub</span>
-        <h2 class="section-title">Learn Before You Consult</h2>
-        <p class="section-sub">An informed patient makes better decisions. Explore these trusted oral health resources.</p>
+        <span class="section-label">Oral Health Resources</span>
+        <h2>Learn Before You Consult</h2>
+        <p>Trusted resources to help you understand your oral health and make informed treatment decisions.</p>
       </div>
+
       <div class="edu-grid">
-        <a href="https://www.who.int/news-room/fact-sheets/detail/oral-health" target="_blank" rel="noopener" class="edu-card">
-          <div class="edu-icon-wrap">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <a href="https://www.who.int/news-room/fact-sheets/detail/oral-health" target="_blank" rel="noopener noreferrer" class="edu-card">
+          <div class="edu-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
           </div>
-          <h3>WHO: Oral Health Facts</h3>
-          <p>Understand the global impact of oral diseases and why prevention matters — from the World Health Organization.</p>
-          <span class="edu-cta">Read Article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          <div class="edu-content">
+            <strong>WHO: Oral Health Facts</strong>
+            <p>Global overview of oral diseases, prevention strategies, and health system recommendations from the World Health Organization.</p>
+            <span class="edu-link">Read on WHO.int <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+          </div>
         </a>
-        <a href="https://www.ada.org/resources/research/science-and-research-institute/oral-health-topics" target="_blank" rel="noopener" class="edu-card">
-          <div class="edu-icon-wrap">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+
+        <a href="https://www.ada.org/resources/research/science-and-research-institute/oral-health-topics" target="_blank" rel="noopener noreferrer" class="edu-card">
+          <div class="edu-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
           </div>
-          <h3>ADA: Dental Health Topics</h3>
-          <p>Browse clinically reviewed guides from the American Dental Association covering hundreds of oral health conditions and treatments.</p>
-          <span class="edu-cta">Read Article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          <div class="edu-content">
+            <strong>ADA Oral Health Topics</strong>
+            <p>Comprehensive dental health library from the American Dental Association covering conditions, procedures, and prevention.</p>
+            <span class="edu-link">Read on ADA.org <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+          </div>
         </a>
-        <a href="https://www.nhs.uk/live-well/healthy-teeth-and-gums/" target="_blank" rel="noopener" class="edu-card">
-          <div class="edu-icon-wrap">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+
+        <a href="https://www.nhs.uk/live-well/healthy-teeth-and-gums/" target="_blank" rel="noopener noreferrer" class="edu-card">
+          <div class="edu-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
           </div>
-          <h3>NHS: Healthy Teeth Guide</h3>
-          <p>A practical, evidence-based guide to caring for your teeth and gums daily — from the UK National Health Service.</p>
-          <span class="edu-cta">Read Article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          <div class="edu-content">
+            <strong>NHS: Healthy Teeth Guide</strong>
+            <p>Evidence-based guidance on brushing, flossing, diet, and maintaining strong healthy gums throughout your life.</p>
+            <span class="edu-link">Read on NHS.uk <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+          </div>
+        </a>
+
+        <a href="https://www.colgate.com/en-us/oral-health" target="_blank" rel="noopener noreferrer" class="edu-card">
+          <div class="edu-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="edu-content">
+            <strong>Colgate Oral Care Center</strong>
+            <p>Accessible, well-researched articles on oral hygiene, dental products, and understanding common dental conditions.</p>
+            <span class="edu-link">Read on Colgate.com <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+          </div>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- EMERGENCY BANNER -->
+  <!-- EMERGENCY CONTACT BANNER -->
   <section class="emergency-banner">
-    <div class="container emergency-wrap">
-      <div class="emergency-left">
-        <div class="emergency-pulse"></div>
-        <div>
-          <h2>Dental Emergency? Do Not Wait.</h2>
-          <p>Severe toothache, knocked-out tooth, or facial swelling — call us immediately. We respond fast.</p>
+    <div class="container">
+      <div class="emergency-content">
+        <div class="emergency-icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
         </div>
-      </div>
-      <div class="emergency-right">
-        <a href="tel:07039625531" class="btn btn-emergency-call">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 5.73 5.73l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-          Call: 07039625531
-        </a>
-        <a href="https://wa.me/2347039625531" target="_blank" rel="noopener" class="btn btn-whatsapp-em">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
-          WhatsApp Us
-        </a>
+        <div class="emergency-text">
+          <h2>Dental Emergency?</h2>
+          <p>Severe toothache, swelling, knocked-out tooth, or broken crown — do not wait. Contact us immediately for urgent dental care.</p>
+        </div>
+        <div class="emergency-buttons">
+          <a href="tel:07039625531" class="emergency-btn phone">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.57 3.18 2 2 0 0 1 3.55 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.64A16 16 0 0 0 15.36 16.09l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            Call Now: 07039625531
+          </a>
+          <a href="https://wa.me/2347039625531?text=I%20have%20a%20dental%20emergency%20and%20need%20urgent%20assistance." target="_blank" rel="noopener noreferrer" class="emergency-btn whatsapp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            WhatsApp Us
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer" id="contact">
-    <div class="footer-main">
-      <div class="container footer-grid">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
 
-        <div class="footer-col footer-brand-col">
-          <a href="#home" class="footer-logo-link">
-            <div class="logo-icon-wrap footer-logo-icon">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="24" cy="24" r="24" fill="#f5c518"/>
-                <path d="M16 20c0-4.418 3.582-8 8-8s8 3.582 8 8c0 3.5-1.5 5.8-3.2 8.5C27 31.5 25.5 34 24 36c-1.5-2-3-4.5-4.8-7.5C17.5 25.8 16 23.5 16 20z" fill="#1a3a5c"/>
-                <circle cx="24" cy="20" r="3" fill="#fff"/>
-              </svg>
+          <div class="footer-brand">
+            <a href="#home" class="footer-logo">
+              <div class="logo-mark">
+                <svg width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="22" fill="#0A2540" stroke="#F5C842" stroke-width="2"/>
+                  <path d="M16 18C16 14.686 18.686 12 22 12C23.657 12 25.157 12.672 26.243 13.757C27.329 12.672 28.829 12 30.486 12C33.8 12 36.486 14.686 36.486 18C36.486 20.5 35.2 22.7 33.243 24C35.2 25.3 36.486 27.5 36.486 30C36.486 33.314 33.8 36 30.486 36C28.829 36 27.329 35.328 26.243 34.243C25.157 35.328 23.657 36 22 36C18.686 36 16 33.314 16 30C16 27.5 17.286 25.3 19.243 24C17.286 22.7 16 20.5 16 18Z" fill="#F5C842" opacity="0.9"/>
+                  <circle cx="24" cy="24" r="3" fill="#0A2540"/>
+                </svg>
+              </div>
+              <div class="logo-text">
+                <span class="logo-brand">Bright Beam</span>
+                <span class="logo-sub">Dental Care</span>
+              </div>
+            </a>
+            <p>A premier dental clinic serving patients in Benin City and across Nigeria with clinical excellence and compassionate care.</p>
+            <div class="social-links">
+              <a href="https://wa.me/2347039625531" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              </a>
+              <a href="https://www.instagram.com/brightbeamdental" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              </a>
+              <a href="https://www.tiktok.com/@brightbeamdental" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="social-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+              </a>
             </div>
-            <div class="logo-text-wrap">
-              <span class="logo-primary" style="color:#fff;">BrightBeam</span>
-              <span class="logo-secondary" style="color:rgba(255,255,255,0.55);">Dental Care</span>
-            </div>
-          </a>
-          <p class="footer-brand-desc">A premium dental clinic committed to exceptional oral healthcare — serving Benin City with precision, compassion, and integrity.</p>
-          <div class="footer-socials">
-            <a href="https://wa.me/2347039625531" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-btn">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
-            </a>
-            <a href="https://instagram.com/brightbeamdental" target="_blank" rel="noopener" aria-label="Instagram" class="social-btn">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </a>
-            <a href="https://tiktok.com/@brightbeamdental" target="_blank" rel="noopener" aria-label="TikTok" class="social-btn">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.95a8.16 8.16 0 004.77 1.52V7.01a4.85 4.85 0 01-1-.32z"/></svg>
-            </a>
           </div>
-        </div>
 
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="services.html">All Services</a></li>
-            <li><a href="consultation.html">Book Consultation</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="https://www.ada.org/resources/research/science-and-research-institute/oral-health-topics" target="_blank" rel="noopener">Oral Health Resources</a></li>
-          </ul>
-        </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="services.html">All Services</a></li>
+              <li><a href="consultation.html">Consultation</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="https://www.ada.org/resources/research/science-and-research-institute/oral-health-topics" target="_blank" rel="noopener noreferrer">Oral Health Resources</a></li>
+            </ul>
+          </div>
 
-        <div class="footer-col">
-          <h4>Our Services</h4>
-          <ul class="footer-links">
-            <li><a href="services.html">General Dentistry</a></li>
-            <li><a href="services.html">Cosmetic Dentistry</a></li>
-            <li><a href="services.html">Dental Implants</a></li>
-            <li><a href="services.html">Orthodontics</a></li>
-            <li><a href="services.html">Pediatric Dentistry</a></li>
-            <li><a href="services.html">Emergency Care</a></li>
-          </ul>
-        </div>
+          <div class="footer-col">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#services">General Dentistry</a></li>
+              <li><a href="#services">Teeth Whitening</a></li>
+              <li><a href="#services">Dental Implants</a></li>
+              <li><a href="#services">Orthodontics</a></li>
+              <li><a href="#services">Root Canal</a></li>
+              <li><a href="#services">Smile Makeover</a></li>
+            </ul>
+          </div>
 
-        <div class="footer-col footer-contact-col">
-          <h4>Contact Us</h4>
-          <ul class="footer-contact">
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div class="footer-col footer-contact">
+            <h4>Contact Us</h4>
+            <div class="footer-contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
               <span>Airport Road, Ihama,<br>Benin City, Edo State</span>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 5.73 5.73l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.57 3.18 2 2 0 0 1 3.55 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.64A16 16 0 0 0 15.36 16.09l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
               <a href="tel:07039625531">07039625531</a>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
               <a href="mailto:info@brightbeamdental.com">info@brightbeamdental.com</a>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              <span>Monday to Saturday: 8:00am – 6:00pm</span>
-            </li>
-          </ul>
-        </div>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>Mon – Sat: 8:00 AM – 6:00 PM</span>
+            </div>
+          </div>
 
+        </div>
       </div>
     </div>
+
     <div class="footer-bottom">
-      <div class="container footer-bottom-inner">
-        <p>© 2025 Bright Beam Dental Care. All rights reserved. Airport Road, Ihama, Benin City.</p>
-        <p>Designed for excellence in patient care.</p>
+      <div class="container">
+        <p>© 2025 Bright Beam Dental Care. All rights reserved. Airport Road, Ihama, Benin City, Edo State, Nigeria.</p>
+        <p>Website by <strong>Bright Beam Digital</strong></p>
       </div>
     </div>
   </footer>

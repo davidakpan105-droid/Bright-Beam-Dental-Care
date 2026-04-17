@@ -1,208 +1,229 @@
 /* ============================================================
    BRIGHT BEAM DENTAL CARE — script.js
+   All interactive functionality
    ============================================================ */
 
 (function () {
   'use strict';
 
-  /* ---- NAVBAR SCROLL ------------------------------------- */
+  /* ---------------------- NAVBAR ---------------------- */
   const navbar = document.getElementById('navbar');
-  const backToTop = document.getElementById('backToTop');
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  const navLinkItems = document.querySelectorAll('.nav-link');
 
-  window.addEventListener('scroll', function () {
-    const scrollY = window.scrollY;
-
-    if (scrollY > 60) {
+  function handleScroll() {
+    if (window.scrollY > 40) {
       navbar.classList.add('scrolled');
     } else {
       navbar.classList.remove('scrolled');
     }
 
-    if (scrollY > 400) {
-      backToTop.classList.add('visible');
-    } else {
-      backToTop.classList.remove('visible');
-    }
-
-    // Active nav link
     updateActiveNavLink();
-  }, { passive: true });
+    handleBackToTop();
+    handleRevealAnimations();
+  }
 
-  backToTop.addEventListener('click', function () {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  handleScroll();
+
+  hamburger.addEventListener('click', function () {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('open');
+    document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
   });
 
-  /* ---- ACTIVE NAV LINK ----------------------------------- */
+  navLinkItems.forEach(function (link) {
+    link.addEventListener('click', function () {
+      hamburger.classList.remove('active');
+      navLinks.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+
+  // Close menu on outside click
+  document.addEventListener('click', function (e) {
+    if (navLinks.classList.contains('open') &&
+        !navLinks.contains(e.target) &&
+        !hamburger.contains(e.target)) {
+      hamburger.classList.remove('active');
+      navLinks.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  });
+
+  /* ---------------------- ACTIVE NAV LINK ---------------------- */
   function updateActiveNavLink() {
-    const sections = ['home', 'about', 'services', 'consultation', 'contact'];
-    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('section[id], footer[id]');
     let current = '';
 
-    sections.forEach(function (id) {
-      const section = document.getElementById(id);
-      if (section) {
-        const rect = section.getBoundingClientRect();
-        if (rect.top <= 100) {
-          current = id;
-        }
+    sections.forEach(function (section) {
+      const sectionTop = section.offsetTop - 100;
+      if (window.scrollY >= sectionTop) {
+        current = section.getAttribute('id');
       }
     });
 
-    navLinks.forEach(function (link) {
+    navLinkItems.forEach(function (link) {
       link.classList.remove('active');
-      if (link.getAttribute('href') === '#' + current) {
+      const href = link.getAttribute('href');
+      if (href === '#' + current) {
         link.classList.add('active');
       }
     });
   }
 
-  /* ---- HAMBURGER MENU ------------------------------------ */
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('navLinks');
-
-  hamburger.addEventListener('click', function () {
-    const isOpen = navLinks.classList.toggle('open');
-    hamburger.classList.toggle('open', isOpen);
-    hamburger.setAttribute('aria-expanded', String(isOpen));
-    document.body.style.overflow = isOpen ? 'hidden' : '';
-  });
-
-  // Close menu when a link is clicked
-  navLinks.querySelectorAll('a').forEach(function (link) {
-    link.addEventListener('click', function () {
-      navLinks.classList.remove('open');
-      hamburger.classList.remove('open');
-      hamburger.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
-    });
-  });
-
-  // Close on outside click
-  document.addEventListener('click', function (e) {
-    if (navLinks.classList.contains('open') &&
-        !navLinks.contains(e.target) &&
-        !hamburger.contains(e.target)) {
-      navLinks.classList.remove('open');
-      hamburger.classList.remove('open');
-      hamburger.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
-    }
-  });
-
-  /* ---- HERO SLIDER --------------------------------------- */
-  const slides = document.querySelectorAll('.hero-slide');
-  const dots = document.querySelectorAll('.hero-dot');
-  const prevBtn = document.getElementById('heroPrev');
-  const nextBtn = document.getElementById('heroNext');
+  /* ---------------------- HERO SLIDER ---------------------- */
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.dot');
+  const prevBtn = document.getElementById('prevSlide');
+  const nextBtn = document.getElementById('nextSlide');
   let currentSlide = 0;
-  let slideTimer = null;
-  const SLIDE_DURATION = 5500;
+  let sliderTimer = null;
 
   function goToSlide(index) {
     slides[currentSlide].classList.remove('active');
     dots[currentSlide].classList.remove('active');
-
     currentSlide = (index + slides.length) % slides.length;
-
     slides[currentSlide].classList.add('active');
     dots[currentSlide].classList.add('active');
   }
 
+  function nextSlide() {
+    goToSlide(currentSlide + 1);
+  }
+
+  function prevSlide() {
+    goToSlide(currentSlide - 1);
+  }
+
   function startAutoSlide() {
-    stopAutoSlide();
-    slideTimer = setInterval(function () {
-      goToSlide(currentSlide + 1);
-    }, SLIDE_DURATION);
+    sliderTimer = setInterval(nextSlide, 5000);
   }
 
   function stopAutoSlide() {
-    if (slideTimer) {
-      clearInterval(slideTimer);
-      slideTimer = null;
-    }
+    clearInterval(sliderTimer);
+  }
+
+  function resetAutoSlide() {
+    stopAutoSlide();
+    startAutoSlide();
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', function () {
+      nextSlide();
+      resetAutoSlide();
+    });
   }
 
   if (prevBtn) {
     prevBtn.addEventListener('click', function () {
-      goToSlide(currentSlide - 1);
-      startAutoSlide();
-    });
-  }
-  if (nextBtn) {
-    nextBtn.addEventListener('click', function () {
-      goToSlide(currentSlide + 1);
-      startAutoSlide();
+      prevSlide();
+      resetAutoSlide();
     });
   }
 
-  dots.forEach(function (dot) {
+  dots.forEach(function (dot, index) {
     dot.addEventListener('click', function () {
-      const index = parseInt(this.getAttribute('data-index'), 10);
       goToSlide(index);
-      startAutoSlide();
+      resetAutoSlide();
     });
   });
 
   // Pause on hover
-  const hero = document.querySelector('.hero');
-  if (hero) {
-    hero.addEventListener('mouseenter', stopAutoSlide);
-    hero.addEventListener('mouseleave', startAutoSlide);
+  const heroSlider = document.getElementById('heroSlider');
+  if (heroSlider) {
+    heroSlider.addEventListener('mouseenter', stopAutoSlide);
+    heroSlider.addEventListener('mouseleave', startAutoSlide);
   }
 
-  // Start slider
+  // Touch swipe for slider
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  if (heroSlider) {
+    heroSlider.addEventListener('touchstart', function (e) {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    heroSlider.addEventListener('touchend', function (e) {
+      touchEndX = e.changedTouches[0].screenX;
+      const diff = touchStartX - touchEndX;
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) {
+          nextSlide();
+        } else {
+          prevSlide();
+        }
+        resetAutoSlide();
+      }
+    }, { passive: true });
+  }
+
   startAutoSlide();
 
-  /* ---- FAQ ACCORDION ------------------------------------- */
+  /* ---------------------- FAQ ACCORDION ---------------------- */
   const faqItems = document.querySelectorAll('.faq-item');
 
   faqItems.forEach(function (item) {
-    const question = item.querySelector('.faq-q');
-    const answer = item.querySelector('.faq-a');
+    const question = item.querySelector('.faq-question');
+    const answer = item.querySelector('.faq-answer');
 
     question.addEventListener('click', function () {
-      const isOpen = question.getAttribute('aria-expanded') === 'true';
+      const isOpen = item.classList.contains('open');
 
-      // Close all
-      faqItems.forEach(function (other) {
-        const otherQ = other.querySelector('.faq-q');
-        const otherA = other.querySelector('.faq-a');
-        otherQ.setAttribute('aria-expanded', 'false');
-        otherA.classList.remove('open');
+      // Close all others
+      faqItems.forEach(function (otherItem) {
+        if (otherItem !== item) {
+          otherItem.classList.remove('open');
+          const otherAnswer = otherItem.querySelector('.faq-answer');
+          otherAnswer.style.maxHeight = null;
+        }
       });
 
-      // Open this one if it was closed
-      if (!isOpen) {
-        question.setAttribute('aria-expanded', 'true');
-        answer.classList.add('open');
+      // Toggle current
+      if (isOpen) {
+        item.classList.remove('open');
+        answer.style.maxHeight = null;
+      } else {
+        item.classList.add('open');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
       }
     });
   });
 
-  /* ---- TESTIMONIALS TOGGLE ------------------------------- */
-  const reviewToggle = document.getElementById('reviewToggle');
+  // Open first FAQ by default
+  if (faqItems.length > 0) {
+    const firstItem = faqItems[0];
+    const firstAnswer = firstItem.querySelector('.faq-answer');
+    firstItem.classList.add('open');
+    firstAnswer.style.maxHeight = firstAnswer.scrollHeight + 'px';
+  }
+
+  /* ---------------------- TESTIMONIALS TOGGLE ---------------------- */
+  const toggleBtn = document.getElementById('toggleReviews');
   const hiddenReviews = document.querySelectorAll('.hidden-review');
-  let reviewsExpanded = false;
+  let reviewsVisible = false;
 
-  if (reviewToggle) {
-    reviewToggle.addEventListener('click', function () {
-      reviewsExpanded = !reviewsExpanded;
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', function () {
+      reviewsVisible = !reviewsVisible;
 
-      hiddenReviews.forEach(function (card) {
-        if (reviewsExpanded) {
-          card.classList.add('visible');
-          card.style.animation = 'fadeInUp 0.4s ease forwards';
+      hiddenReviews.forEach(function (review) {
+        if (reviewsVisible) {
+          review.classList.add('show');
         } else {
-          card.classList.remove('visible');
+          review.classList.remove('show');
         }
       });
 
-      reviewToggle.textContent = reviewsExpanded ? 'Show Less' : 'Show More Reviews';
+      toggleBtn.textContent = reviewsVisible ? 'Show Less Reviews' : 'Show More Reviews';
     });
   }
 
-  /* ---- CONSULTATION FORM --------------------------------- */
-  const consultForm = document.getElementById('consultForm');
+  /* ---------------------- CONSULTATION FORM ---------------------- */
+  const consultForm = document.getElementById('consultationForm');
   const formSuccess = document.getElementById('formSuccess');
 
   if (consultForm) {
@@ -214,77 +235,134 @@
       const service = document.getElementById('service').value;
 
       if (!name || !phone || !service) {
-        // Simple validation highlight
-        [document.getElementById('fullName'), document.getElementById('phone'), document.getElementById('service')].forEach(function (field) {
-          if (!field.value.trim()) {
-            field.style.borderColor = '#ef4444';
-            field.style.boxShadow = '0 0 0 3px rgba(239,68,68,0.1)';
-            field.addEventListener('input', function () {
-              field.style.borderColor = '';
-              field.style.boxShadow = '';
-            }, { once: true });
-          }
-        });
+        highlightEmptyFields();
         return;
       }
 
       // Simulate submission
       const submitBtn = consultForm.querySelector('button[type="submit"]');
-      const originalText = submitBtn.textContent;
       submitBtn.textContent = 'Sending...';
       submitBtn.disabled = true;
 
       setTimeout(function () {
-        consultForm.reset();
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
-        if (formSuccess) {
-          formSuccess.classList.add('visible');
-          setTimeout(function () {
-            formSuccess.classList.remove('visible');
-          }, 7000);
-        }
-      }, 1400);
+        consultForm.classList.add('hidden');
+        formSuccess.classList.add('visible');
+
+        // WhatsApp redirect with pre-filled message
+        const message = encodeURIComponent(
+          'Hello Bright Beam Dental Care,\n\nI would like to book a consultation.\n\nName: ' + name +
+          '\nPhone: ' + phone +
+          '\nService: ' + service +
+          '\n\nPlease confirm my appointment.'
+        );
+        window.open('https://wa.me/2347039625531?text=' + message, '_blank');
+      }, 1200);
     });
   }
 
-  /* ---- SMOOTH SCROLL FOR ANCHORS ------------------------- */
+  function highlightEmptyFields() {
+    const required = consultForm.querySelectorAll('[required]');
+    required.forEach(function (field) {
+      if (!field.value.trim() || (field.tagName === 'SELECT' && !field.value)) {
+        field.style.borderColor = '#DC2626';
+        field.addEventListener('input', function () {
+          field.style.borderColor = '';
+        }, { once: true });
+        field.addEventListener('change', function () {
+          field.style.borderColor = '';
+        }, { once: true });
+      }
+    });
+
+    // Scroll to first empty required field
+    const firstEmpty = Array.from(required).find(function (f) {
+      return !f.value.trim() || (f.tagName === 'SELECT' && !f.value);
+    });
+    if (firstEmpty) {
+      firstEmpty.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      firstEmpty.focus();
+    }
+  }
+
+  /* ---------------------- BACK TO TOP ---------------------- */
+  const backToTopBtn = document.getElementById('backToTop');
+
+  function handleBackToTop() {
+    if (window.scrollY > 400) {
+      backToTopBtn.classList.add('visible');
+    } else {
+      backToTopBtn.classList.remove('visible');
+    }
+  }
+
+  if (backToTopBtn) {
+    backToTopBtn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  /* ---------------------- REVEAL ANIMATIONS ---------------------- */
+  const revealElements = document.querySelectorAll(
+    '.service-card, .ba-card, .testimonial-card, .edu-card, .trust-item, .about-grid, .consultation-grid, .ba-grid'
+  );
+
+  revealElements.forEach(function (el) {
+    el.classList.add('reveal');
+  });
+
+  function handleRevealAnimations() {
+    revealElements.forEach(function (el) {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 80) {
+        el.classList.add('in-view');
+      }
+    });
+  }
+
+  handleRevealAnimations();
+
+  /* ---------------------- SMOOTH ANCHOR SCROLLING ---------------------- */
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
       const target = document.querySelector(this.getAttribute('href'));
       if (target) {
         e.preventDefault();
-        const offsetTop = target.getBoundingClientRect().top + window.scrollY - 80;
-        window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+        const offset = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height')) || 76;
+        const targetY = target.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top: targetY, behavior: 'smooth' });
       }
     });
   });
 
-  /* ---- FADE-IN ON SCROLL (Intersection Observer) --------- */
-  const fadeTargets = document.querySelectorAll(
-    '.service-card, .review-card, .ba-card, .edu-card, .trust-item, .faq-item'
-  );
-
-  const fadeObserver = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
-        fadeObserver.unobserve(entry.target);
-      }
+  /* ---------------------- STAGGER SERVICE CARDS ---------------------- */
+  function staggerCards() {
+    const cards = document.querySelectorAll('.services-grid .service-card');
+    cards.forEach(function (card, index) {
+      card.style.transitionDelay = (index * 0.08) + 's';
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-  fadeTargets.forEach(function (el, index) {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(24px)';
-    el.style.transition = 'opacity 0.5s ease ' + (index * 0.06) + 's, transform 0.5s ease ' + (index * 0.06) + 's';
-    fadeObserver.observe(el);
-  });
+    const baCards = document.querySelectorAll('.ba-grid .ba-card');
+    baCards.forEach(function (card, index) {
+      card.style.transitionDelay = (index * 0.1) + 's';
+    });
+  }
 
-  /* ---- KEYFRAME for fade in reviews ---------------------- */
-  const style = document.createElement('style');
-  style.textContent = '@keyframes fadeInUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }';
-  document.head.appendChild(style);
+  staggerCards();
+
+  /* ---------------------- INTERSECTION OBSERVER (ENHANCED) ---------------------- */
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+
+    revealElements.forEach(function (el) {
+      observer.observe(el);
+    });
+  }
 
 })();
