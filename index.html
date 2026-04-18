@@ -27,14 +27,14 @@
       <div class="nav-inner">
 
         <a href="#hero" class="nav-logo" aria-label="Bright Beam Dental Care home">
-          <span>Dental Care</span>
-          <strong>Bright Beam</strong>
+          <strong>Bright Beam <span>Dental Care</span></strong>
         </a>
 
         <ul class="nav-links" role="list">
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#before-after">Results</a></li>
+          <li><a href="#dental-guide">Health Guide</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#testimonials">Reviews</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -67,43 +67,57 @@
   ══════════════════════════════════ -->
   <section id="hero" aria-label="Hero banner">
 
+    <!-- Background image slides -->
     <div class="hero-slider">
-
       <div class="hero-slide active">
         <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1600&q=80&auto=format&fit=crop" alt="Happy patient smiling after dental treatment" loading="eager" />
       </div>
-
       <div class="hero-slide">
         <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=1600&q=80&auto=format&fit=crop" alt="Dentist performing professional dental treatment" loading="lazy" />
       </div>
-
       <div class="hero-slide">
         <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1600&q=80&auto=format&fit=crop" alt="Bright confident smile transformation result" loading="lazy" />
       </div>
-
     </div>
 
     <div class="hero-overlay"></div>
 
+    <!-- Content slides — one per background -->
     <div class="hero-content">
-      <div class="hero-text">
 
-        <div class="hero-badge">
-          <span>10+ Years of Trusted Dental Care in Benin City</span>
-        </div>
-
-        <h1>Enhance Your Smile and <em>Boost Your Confidence</em></h1>
-
-        <p>
-          Professional, personalised dental care that puts you at ease. From routine cleaning to complete smile transformations — your healthier, brighter smile starts here.
-        </p>
-
+      <!-- SLIDE 1 -->
+      <div class="hero-text hero-text-slide active" data-slide="0">
+        <div class="hero-badge"><span>Did You Know?</span></div>
+        <h1>Bad Breath &amp; Bleeding Gums <em>Are Not Normal</em></h1>
+        <p>These are early warning signs — and they are completely treatable. The sooner you act, the simpler the fix.</p>
         <div class="hero-actions">
-          <a href="consultation.html" class="btn btn-primary">Book Consultation</a>
-          <a href="tel:+2340000000000" class="btn btn-outline">Call Now</a>
+          <a href="consultation.html" class="btn btn-primary">Get a Diagnosis — &#x20A6;10,000</a>
+          <a href="#services" class="btn btn-outline">See What We Treat</a>
         </div>
-
       </div>
+
+      <!-- SLIDE 2 -->
+      <div class="hero-text hero-text-slide" data-slide="1">
+        <div class="hero-badge"><span>10+ Years of Expert Care in Benin City</span></div>
+        <h1>Every Month You Wait, the <em>Damage Gets Deeper</em></h1>
+        <p>A small cavity today becomes a costly extraction tomorrow. Dr. Egbewole has helped over 1,200 patients — the earlier you come, the better the outcome.</p>
+        <div class="hero-actions">
+          <a href="consultation.html" class="btn btn-primary">Book Your Consultation</a>
+          <a href="tel:+2347039625531" class="btn btn-outline">Call Now</a>
+        </div>
+      </div>
+
+      <!-- SLIDE 3 -->
+      <div class="hero-text hero-text-slide" data-slide="2">
+        <div class="hero-badge"><span>Walk-in &amp; Online Consultations Available</span></div>
+        <h1>One Visit. A Smile That <em>Changes Everything.</em></h1>
+        <p>Whiter teeth. Healthier gums. No more hiding your smile. Get a full assessment, a clear diagnosis, and a plan — no pressure, no surprises.</p>
+        <div class="hero-actions">
+          <a href="consultation.html" class="btn btn-primary">Start Your Transformation</a>
+          <a href="#before-after" class="btn btn-outline">See Real Results</a>
+        </div>
+      </div>
+
     </div>
 
     <div class="hero-dots" role="tablist" aria-label="Slide navigation">
@@ -323,34 +337,118 @@
       <div class="section-header centered reveal">
         <span class="section-label">Real Patient Results</span>
         <h2 class="section-title" id="ba-heading">Before &amp; After Transformations</h2>
-        <p class="section-sub">Every smile is a story. These are real results achieved through expert care and personalised treatment plans.</p>
+        <p class="section-sub">Drag the handle to reveal the transformation. Every result shown is from a real treatment at Bright Beam Dental Care.</p>
       </div>
 
-      <div class="ba-grid" role="list">
+      <div class="ba-grid-new">
 
-        <div class="ba-card reveal" role="listitem">
-          <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=600&q=80&auto=format&fit=crop" alt="Smile transformation — teeth whitening result" loading="lazy" />
-          <div class="ba-label">Teeth Whitening</div>
+        <!-- Comparison 1 — Teeth Whitening -->
+        <div class="ba-compare reveal" data-label-before="Before" data-label-after="After">
+          <div class="ba-compare-inner">
+            <div class="ba-after-img">
+              <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=700&q=85&auto=format&fit=crop" alt="After teeth whitening treatment" loading="lazy" />
+            </div>
+            <div class="ba-before-img">
+              <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=700&q=85&auto=format&fit=crop" alt="Before teeth whitening treatment" loading="lazy" />
+            </div>
+            <div class="ba-handle">
+              <div class="ba-handle-line"></div>
+              <div class="ba-handle-btn" aria-label="Drag to compare">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+              </div>
+            </div>
+            <span class="ba-tag ba-tag-before">Before</span>
+            <span class="ba-tag ba-tag-after">After</span>
+          </div>
+          <p class="ba-caption">Teeth Whitening — 2 sessions</p>
         </div>
 
-        <div class="ba-card reveal" role="listitem">
-          <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=80&auto=format&fit=crop" alt="Complete smile makeover transformation" loading="lazy" />
-          <div class="ba-label">Smile Makeover</div>
+        <!-- Comparison 2 — Smile Makeover -->
+        <div class="ba-compare reveal" data-label-before="Before" data-label-after="After">
+          <div class="ba-compare-inner">
+            <div class="ba-after-img">
+              <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=700&q=85&auto=format&fit=crop" alt="After complete smile makeover" loading="lazy" />
+            </div>
+            <div class="ba-before-img">
+              <img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=700&q=85&auto=format&fit=crop" alt="Before smile makeover treatment" loading="lazy" />
+            </div>
+            <div class="ba-handle">
+              <div class="ba-handle-line"></div>
+              <div class="ba-handle-btn" aria-label="Drag to compare">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+              </div>
+            </div>
+            <span class="ba-tag ba-tag-before">Before</span>
+            <span class="ba-tag ba-tag-after">After</span>
+          </div>
+          <p class="ba-caption">Complete Smile Makeover</p>
         </div>
 
-        <div class="ba-card reveal" role="listitem">
-          <img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=600&q=80&auto=format&fit=crop" alt="Orthodontic braces alignment result" loading="lazy" />
-          <div class="ba-label">Orthodontics Result</div>
+        <!-- Comparison 3 — Braces -->
+        <div class="ba-compare reveal" data-label-before="Before" data-label-after="After">
+          <div class="ba-compare-inner">
+            <div class="ba-after-img">
+              <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=700&q=85&auto=format&fit=crop" alt="After orthodontic braces treatment" loading="lazy" />
+            </div>
+            <div class="ba-before-img">
+              <img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=700&q=85&auto=format&fit=crop" alt="Before orthodontic treatment" loading="lazy" />
+            </div>
+            <div class="ba-handle">
+              <div class="ba-handle-line"></div>
+              <div class="ba-handle-btn" aria-label="Drag to compare">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+              </div>
+            </div>
+            <span class="ba-tag ba-tag-before">Before</span>
+            <span class="ba-tag ba-tag-after">After</span>
+          </div>
+          <p class="ba-caption">Orthodontics — 8 months</p>
         </div>
 
-        <div class="ba-card hidden reveal" role="listitem" style="display:none">
-          <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80&auto=format&fit=crop" alt="Dental restoration and gum treatment result" loading="lazy" />
-          <div class="ba-label">Gum Treatment</div>
+        <!-- Extra cards (hidden) -->
+        <div class="ba-compare ba-extra reveal" data-label-before="Before" data-label-after="After" style="display:none">
+          <div class="ba-compare-inner">
+            <div class="ba-after-img">
+              <img src="https://images.unsplash.com/photo-1590424693420-b8c0dc1c48b5?w=700&q=85&auto=format&fit=crop" alt="After gum treatment" loading="lazy" />
+            </div>
+            <div class="ba-before-img">
+              <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=700&q=85&auto=format&fit=crop" alt="Before gum treatment" loading="lazy" />
+            </div>
+            <div class="ba-handle">
+              <div class="ba-handle-line"></div>
+              <div class="ba-handle-btn" aria-label="Drag to compare">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+              </div>
+            </div>
+            <span class="ba-tag ba-tag-before">Before</span>
+            <span class="ba-tag ba-tag-after">After</span>
+          </div>
+          <p class="ba-caption">Gum Treatment &amp; Restoration</p>
         </div>
 
-        <div class="ba-card hidden reveal" role="listitem" style="display:none">
-          <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=600&q=80&auto=format&fit=crop" alt="Dental filling and restoration final result" loading="lazy" />
-          <div class="ba-label">Composite Filling</div>
+        <div class="ba-compare ba-extra reveal" data-label-before="Before" data-label-after="After" style="display:none">
+          <div class="ba-compare-inner">
+            <div class="ba-after-img">
+              <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=700&q=85&auto=format&fit=crop" alt="After composite filling" loading="lazy" />
+            </div>
+            <div class="ba-before-img">
+              <img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=700&q=85&auto=format&fit=crop" alt="Before composite filling" loading="lazy" />
+            </div>
+            <div class="ba-handle">
+              <div class="ba-handle-line"></div>
+              <div class="ba-handle-btn" aria-label="Drag to compare">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+              </div>
+            </div>
+            <span class="ba-tag ba-tag-before">Before</span>
+            <span class="ba-tag ba-tag-after">After</span>
+          </div>
+          <p class="ba-caption">Composite Filling</p>
         </div>
 
       </div>
@@ -375,49 +473,63 @@
         <p class="section-sub">We combine clinical expertise with genuine compassion to deliver a dental experience that is second to none.</p>
       </div>
 
-      <div class="why-grid" role="list">
+      <!-- Why Carousel -->
+      <div class="why-carousel-wrap">
+        <div class="why-carousel" id="whyCarousel" role="list">
 
-        <div class="why-card reveal" role="listitem">
-          <div class="why-icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <div class="why-card" role="listitem">
+            <div class="why-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <h3>Experienced Care</h3>
+            <p>Over a decade of clinical practice managing diverse and complex dental cases with consistent, measurable outcomes.</p>
           </div>
-          <h3>Experienced Care</h3>
-          <p>Over a decade of clinical practice managing diverse and complex dental cases with consistent, measurable outcomes.</p>
+
+          <div class="why-card" role="listitem">
+            <div class="why-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M5.34 5.34L3.93 6.75M19.07 19.07l-1.41-1.41M5.34 18.66l-1.41 1.41M21 12h-2M5 12H3M12 3V1M12 23v-2"/></svg></div>
+            <h3>Modern Equipment</h3>
+            <p>State-of-the-art diagnostic tools and treatment equipment ensure precision, safety, and comfort in every procedure.</p>
+          </div>
+
+          <div class="why-card" role="listitem">
+            <div class="why-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+            <h3>Affordable Pricing</h3>
+            <p>Quality dental care at fair, transparent prices. Consultations start from just <strong style="color:var(--yellow)">&#x20A6;10,000</strong> — no hidden charges, ever.</p>
+          </div>
+
+          <div class="why-card" role="listitem">
+            <div class="why-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+            <h3>Personalised Treatment</h3>
+            <p>Every patient receives a custom treatment plan tailored to their unique oral health needs, lifestyle, and aesthetic goals.</p>
+          </div>
+
+          <div class="why-card why-card-extra" role="listitem" style="display:none">
+            <div class="why-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <h3>Community Outreach</h3>
+            <p>Actively committed to dental health education and free outreach programmes across communities in Edo State.</p>
+          </div>
+
+          <div class="why-card why-card-extra" role="listitem" style="display:none">
+            <div class="why-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"/><path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></div>
+            <h3>Trusted by Hundreds</h3>
+            <p>Hundreds of patients across Benin City, Delta State, and Lagos trust Bright Beam Dental Care for their oral health.</p>
+          </div>
+
         </div>
 
-        <div class="why-card reveal" role="listitem">
-          <div class="why-icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M5.34 5.34L3.93 6.75M19.07 19.07l-1.41-1.41M5.34 18.66l-1.41 1.41M21 12h-2M5 12H3M12 3V1M12 23v-2"/></svg>
-          </div>
-          <h3>Modern Equipment</h3>
-          <p>State-of-the-art diagnostic tools and treatment equipment ensure precision, safety, and comfort in every procedure.</p>
+        <div class="why-nav">
+          <button class="why-arrow" id="whyPrev" aria-label="Previous feature">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <div class="why-dots-wrap" id="whyDots"></div>
+          <button class="why-arrow" id="whyNext" aria-label="Next feature">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
         </div>
 
-        <div class="why-card reveal" role="listitem">
-          <div class="why-icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-          </div>
-          <h3>Affordable Pricing</h3>
-          <p>Transparent, competitive fees that prioritise access to high-quality dental care — without compromise on the standard of treatment.</p>
+        <div style="text-align:center;margin-top:32px">
+          <button id="why-toggle" class="btn btn-outline">See More Reasons</button>
         </div>
-
-        <div class="why-card reveal" role="listitem">
-          <div class="why-icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-          </div>
-          <h3>Personalised Treatment</h3>
-          <p>Every patient receives a custom treatment plan tailored to their unique oral health needs, lifestyle, and aesthetic goals.</p>
-        </div>
-
-        <div class="why-card reveal" role="listitem">
-          <div class="why-icon" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <h3>Community Outreach</h3>
-          <p>Actively committed to dental health education and free outreach programmes across communities in Edo State.</p>
-        </div>
-
       </div>
+
     </div>
   </section>
 
@@ -709,11 +821,15 @@
 
 
   <!-- ══════════════════════════════════
-       CTA SECTION
+       CTA SECTION — VIDEO BACKGROUND
   ══════════════════════════════════ -->
   <section id="cta-section" aria-labelledby="cta-heading">
     <div class="cta-bg">
-      <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1600&q=80&auto=format&fit=crop" alt="" aria-hidden="true" loading="lazy" />
+      <!-- Muted, looping background video -->
+      <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1600&q=80&auto=format&fit=crop" aria-hidden="true">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+        <!-- Fallback poster image is shown if video fails -->
+      </video>
       <div class="cta-bg-overlay"></div>
     </div>
     <div class="container">
@@ -722,7 +838,7 @@
         <p>Take the first step towards a healthier, more confident you. Your consultation with Dr. Egbewole begins with one click.</p>
         <div class="cta-actions">
           <a href="consultation.html" class="btn btn-primary">Book Consultation</a>
-          <a href="tel:+2340000000000" class="btn btn-outline">Call Now</a>
+          <a href="tel:+2347039625531" class="btn btn-outline">Call Now</a>
         </div>
       </div>
     </div>
@@ -760,7 +876,17 @@
               </div>
               <div>
                 <strong>Phone (Click to Call)</strong>
-                <a href="tel:+2340000000000">+234 000 000 0000</a>
+                <a href="tel:+2347039625531">+234 703 962 5531</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:egbewolet@gmail.com">egbewolet@gmail.com</a>
               </div>
             </div>
 
@@ -776,7 +902,7 @@
 
           </div>
 
-          <a href="https://wa.me/2340000000000" class="contact-wa" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+          <a href="https://wa.me/2347039625531" class="contact-wa" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
             Chat on WhatsApp
           </a>
@@ -798,6 +924,127 @@
 
 
   <!-- ══════════════════════════════════
+       DENTAL HEALTH GUIDE (BLOG)
+  ══════════════════════════════════ -->
+  <section id="dental-guide" aria-labelledby="guide-heading">
+    <div class="container">
+
+      <div class="section-header centered reveal">
+        <span class="section-label">Patient Education</span>
+        <h2 class="section-title" id="guide-heading">Common Teeth Problems Explained</h2>
+        <p class="section-sub">Understanding your oral health is the first step to protecting it. Dr. Egbewole breaks down the conditions she treats most frequently.</p>
+      </div>
+
+      <div class="guide-grid">
+
+        <article class="guide-card reveal">
+          <div class="guide-img-wrap">
+            <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80&auto=format&fit=crop" alt="Tooth decay and cavities" loading="lazy" />
+            <span class="guide-tag">Very Common</span>
+          </div>
+          <div class="guide-body">
+            <span class="guide-cat">Preventive</span>
+            <h3>Tooth Decay &amp; Cavities</h3>
+            <p>Cavities form when bacteria in the mouth produce acid that erodes tooth enamel. Left untreated, decay can reach the inner pulp and cause severe pain. Early treatment involves simple fillings — waiting can require root canal therapy or extraction.</p>
+            <div class="guide-meta">
+              <span class="guide-symptom">Key signs: Toothache, sensitivity to sweets, visible holes</span>
+              <a href="consultation.html" class="guide-link">Get Assessed</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="guide-card reveal">
+          <div class="guide-img-wrap">
+            <img src="https://images.unsplash.com/photo-1590424693420-b8c0dc1c48b5?w=600&q=80&auto=format&fit=crop" alt="Gum disease periodontal" loading="lazy" />
+            <span class="guide-tag">Adults 30+</span>
+          </div>
+          <div class="guide-body">
+            <span class="guide-cat">Periodontal</span>
+            <h3>Gum Disease (Periodontitis)</h3>
+            <p>Gum disease begins as gingivitis — redness and bleeding when brushing — and can progress to periodontitis, where infection destroys the bone supporting your teeth. It is one of the leading causes of adult tooth loss and is entirely preventable with routine cleaning.</p>
+            <div class="guide-meta">
+              <span class="guide-symptom">Key signs: Bleeding gums, bad breath, receding gum line</span>
+              <a href="consultation.html" class="guide-link">Get Assessed</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="guide-card reveal">
+          <div class="guide-img-wrap">
+            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=80&auto=format&fit=crop" alt="Teeth sensitivity dental" loading="lazy" />
+            <span class="guide-tag">Very Common</span>
+          </div>
+          <div class="guide-body">
+            <span class="guide-cat">Sensitivity</span>
+            <h3>Tooth Sensitivity</h3>
+            <p>A sharp, brief pain when consuming hot, cold, sweet, or acidic foods or drinks is a sign of exposed dentine — the inner layer of your tooth. Causes include enamel wear, gum recession, or cracked teeth. It is highly treatable once the root cause is identified.</p>
+            <div class="guide-meta">
+              <span class="guide-symptom">Key signs: Sharp pain with temperature, discomfort when biting</span>
+              <a href="consultation.html" class="guide-link">Get Assessed</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="guide-card reveal">
+          <div class="guide-img-wrap">
+            <img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=600&q=80&auto=format&fit=crop" alt="Misaligned teeth malocclusion" loading="lazy" />
+            <span class="guide-tag">Orthodontics</span>
+          </div>
+          <div class="guide-body">
+            <span class="guide-cat">Alignment</span>
+            <h3>Misaligned Teeth (Malocclusion)</h3>
+            <p>Crowded, spaced, or misaligned teeth affect far more than aesthetics. They create areas that are difficult to clean, increasing decay risk. They also cause jaw strain, headaches, and uneven tooth wear. Braces and orthodontic treatment correct alignment at any age.</p>
+            <div class="guide-meta">
+              <span class="guide-symptom">Key signs: Difficulty chewing, jaw discomfort, crooked appearance</span>
+              <a href="consultation.html" class="guide-link">Get Assessed</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="guide-card reveal">
+          <div class="guide-img-wrap">
+            <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=600&q=80&auto=format&fit=crop" alt="Teeth staining and discolouration" loading="lazy" />
+            <span class="guide-tag">Cosmetic</span>
+          </div>
+          <div class="guide-body">
+            <span class="guide-cat">Cosmetic</span>
+            <h3>Tooth Discolouration &amp; Staining</h3>
+            <p>Teeth can darken due to food and drink (tea, coffee, red wine), tobacco, ageing, or certain medications. Surface stains are removed by scaling and polishing; deeper discolouration responds to professional whitening. The cause determines the right treatment approach.</p>
+            <div class="guide-meta">
+              <span class="guide-symptom">Key signs: Yellow, grey, or brown discolouration; uneven shading</span>
+              <a href="consultation.html" class="guide-link">Get Assessed</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="guide-card reveal">
+          <div class="guide-img-wrap">
+            <img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=600&q=80&auto=format&fit=crop" alt="Halitosis bad breath dental" loading="lazy" />
+            <span class="guide-tag">Often Ignored</span>
+          </div>
+          <div class="guide-body">
+            <span class="guide-cat">Oral Hygiene</span>
+            <h3>Persistent Bad Breath (Halitosis)</h3>
+            <p>Chronic bad breath is almost always a sign of an underlying dental condition — not just what you ate. Gum disease, untreated decay, dry mouth, or bacteria on the tongue are the most common culprits. A clinical diagnosis identifies the exact cause so targeted treatment can begin.</p>
+            <div class="guide-meta">
+              <span class="guide-symptom">Key signs: Persistent odour not resolved by brushing or mints</span>
+              <a href="consultation.html" class="guide-link">Get Assessed</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div style="text-align:center;margin-top:56px" class="reveal">
+        <p style="color:var(--gray-600);margin-bottom:20px;font-size:0.95rem">Not sure what is affecting your teeth? A consultation with Dr. Egbewole will give you a clear answer.</p>
+        <a href="consultation.html" class="btn btn-blue">Book a Consultation — &#x20A6;10,000</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════
        FOOTER
   ══════════════════════════════════ -->
   <footer role="contentinfo">
@@ -807,8 +1054,7 @@
 
         <div class="footer-brand">
           <div class="nav-logo" style="color:#fff">
-            <span style="color:rgba(255,255,255,0.5)">Dental Care</span>
-            <strong style="color:#f5c842">Bright Beam</strong>
+            <strong style="color:#f5c842">Bright Beam <span style="color:rgba(255,255,255,0.7)">Dental Care</span></strong>
           </div>
           <p>Expert dental care delivered with precision, compassion, and over a decade of clinical experience. Serving patients across Edo State and beyond.</p>
           <div class="footer-socials" aria-label="Social media links">
@@ -839,9 +1085,11 @@
         <div class="footer-col">
           <h4>Resources</h4>
           <ul>
+            <li><a href="#dental-guide">Dental Health Guide</a></li>
             <li><a href="#faq">Consultation FAQ</a></li>
             <li><a href="#how-it-works">How It Works</a></li>
-            <li><a href="#contact">Contact &amp; Location</a></li>
+            <li><a href="mailto:egbewolet@gmail.com">egbewolet@gmail.com</a></li>
+            <li><a href="tel:+2347039625531">+234 703 962 5531</a></li>
             <li><a href="https://www.who.int/health-topics/oral-health" target="_blank" rel="noopener noreferrer">Oral Health Tips (WHO)</a></li>
           </ul>
         </div>
@@ -860,7 +1108,7 @@
   <!-- ══════════════════════════════════
        FLOATING ELEMENTS
   ══════════════════════════════════ -->
-  <a href="https://wa.me/2340000000000" class="floating-wa" target="_blank" rel="noopener noreferrer" aria-label="Message us on WhatsApp">
+  <a href="https://wa.me/2347039625531" class="floating-wa" target="_blank" rel="noopener noreferrer" aria-label="Message us on WhatsApp">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
   </a>
 
