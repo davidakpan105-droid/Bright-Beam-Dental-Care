@@ -1,1679 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Book a consultation with Dr. Toyin Racheal Egbewole — Registered Dental Surgery Technician with 10+ years of experience in Benin City." />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Book a Consultation | Bright Beam Dental Care</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
-
-  <style>
-    /* ══════════════════════════════════════
-       ROOT & RESET
-    ══════════════════════════════════════ */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --navy:      #0b1a2e;
-      --navy-mid:  #122240;
-      --navy-light:#1a3460;
-      --blue:      #1e4fa0;
-      --blue-soft: #2563c4;
-      --gold:      #c9a84c;
-      --gold-light:#e2c97e;
-      --gold-pale: #f7f0de;
-      --white:     #ffffff;
-      --off-white: #f9f8f5;
-      --gray-100:  #f2f1ee;
-      --gray-300:  #d8d5cf;
-      --gray-500:  #9a9690;
-      --gray-700:  #4a4843;
-      --text:      #1e1c19;
-      --green:     #1a8a4a;
-      --green-soft:#e8f7ee;
-      --red-soft:  #fff0f0;
-      --red:       #c0392b;
-      --r:         10px;
-      --r-lg:      18px;
-      --r-xl:      28px;
-      --shadow-sm: 0 2px 12px rgba(11,26,46,0.07);
-      --shadow-md: 0 8px 32px rgba(11,26,46,0.12);
-      --shadow-lg: 0 20px 60px rgba(11,26,46,0.18);
-      --t:         0.28s cubic-bezier(0.4,0,0.2,1);
-    }
-
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background: var(--off-white);
-      color: var(--text);
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-    a { text-decoration: none; color: inherit; }
-    img { display: block; max-width: 100%; }
-    button { cursor: pointer; border: none; background: none; font-family: inherit; }
-
-    /* ══════════════════════════════════════
-       NAVBAR
-    ══════════════════════════════════════ */
-    .c-nav {
-      position: fixed;
-      top: 0; left: 0; width: 100%;
-      z-index: 100;
-      background: rgba(11,26,46,0.96);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(201,168,76,0.15);
-      padding: 16px 0;
-    }
-
-    .c-nav-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 5%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .c-nav-logo {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 800;
-      font-size: 1rem;
-      color: var(--white);
-      letter-spacing: -0.01em;
-    }
-
-    .c-nav-logo span { color: var(--gold); }
-
-    .c-nav-back {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 0.82rem;
-      font-weight: 500;
-      color: rgba(255,255,255,0.65);
-      transition: color var(--t);
-    }
-
-    .c-nav-back:hover { color: var(--gold); }
-
-    .c-nav-back svg { width: 16px; height: 16px; }
-
-    /* ══════════════════════════════════════
-       HERO STRIP
-    ══════════════════════════════════════ */
-    .c-hero {
-      background: var(--navy);
-      padding: 120px 5% 72px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .c-hero::before {
-      content: '';
-      position: absolute;
-      top: -120px; right: -120px;
-      width: 600px; height: 600px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(201,168,76,0.08) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    .c-hero::after {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      height: 80px;
-      background: linear-gradient(to bottom, transparent, var(--off-white));
-      pointer-events: none;
-    }
-
-    .c-hero-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 64px;
-      align-items: center;
-    }
-
-    .c-hero-label {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(201,168,76,0.12);
-      border: 1px solid rgba(201,168,76,0.3);
-      border-radius: 40px;
-      padding: 5px 14px;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.65rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 20px;
-    }
-
-    .c-hero h1 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(2rem, 4vw, 3.2rem);
-      font-weight: 700;
-      color: var(--white);
-      line-height: 1.15;
-      margin-bottom: 18px;
-    }
-
-    .c-hero h1 em {
-      font-style: italic;
-      color: var(--gold-light);
-    }
-
-    .c-hero p {
-      font-size: 0.95rem;
-      color: rgba(255,255,255,0.65);
-      line-height: 1.75;
-      margin-bottom: 32px;
-      max-width: 420px;
-    }
-
-    .c-trust-pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .c-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 40px;
-      padding: 6px 14px;
-      font-size: 0.78rem;
-      color: rgba(255,255,255,0.75);
-      font-weight: 500;
-    }
-
-    .c-pill svg { color: var(--gold); flex-shrink: 0; }
-
-    /* Doctor card in hero */
-    .c-doctor-card {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(201,168,76,0.18);
-      border-radius: var(--r-xl);
-      padding: 32px;
-      backdrop-filter: blur(8px);
-    }
-
-    .c-doctor-top {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-      margin-bottom: 24px;
-      padding-bottom: 24px;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-    }
-
-    .c-doctor-avatar {
-      width: 72px; height: 72px;
-      border-radius: 50%;
-      border: 2px solid var(--gold);
-      object-fit: cover;
-      object-position: top;
-    }
-
-    .c-doctor-info strong {
-      display: block;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: var(--white);
-      margin-bottom: 3px;
-    }
-
-    .c-doctor-info span {
-      font-size: 0.78rem;
-      color: var(--gold-light);
-      font-weight: 500;
-    }
-
-    .c-doctor-info small {
-      display: block;
-      font-size: 0.72rem;
-      color: rgba(255,255,255,0.45);
-      margin-top: 2px;
-    }
-
-    .c-avail-list {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .c-avail-item {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 0.8rem;
-    }
-
-    .c-avail-item span:first-child { color: rgba(255,255,255,0.55); }
-
-    .c-avail-badge {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.68rem;
-      font-weight: 700;
-      padding: 3px 10px;
-      border-radius: 20px;
-      letter-spacing: 0.04em;
-    }
-
-    .badge-open {
-      background: rgba(26,138,74,0.2);
-      color: #4ecb82;
-      border: 1px solid rgba(78,203,130,0.25);
-    }
-
-    .badge-closed {
-      background: rgba(255,255,255,0.06);
-      color: rgba(255,255,255,0.35);
-      border: 1px solid rgba(255,255,255,0.08);
-    }
-
-    /* ══════════════════════════════════════
-       MAIN LAYOUT
-    ══════════════════════════════════════ */
-    .c-main {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 64px 5% 96px;
-      display: grid;
-      grid-template-columns: 1fr 400px;
-      gap: 48px;
-      align-items: start;
-    }
-
-    /* ══════════════════════════════════════
-       STEPS INDICATOR
-    ══════════════════════════════════════ */
-    .c-steps {
-      display: flex;
-      align-items: center;
-      gap: 0;
-      margin-bottom: 40px;
-    }
-
-    .c-step {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex: 1;
-      position: relative;
-    }
-
-    .c-step:not(:last-child)::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      top: 18px;
-      left: 38px;
-      height: 2px;
-      background: var(--gray-300);
-      z-index: 0;
-    }
-
-    .c-step.done:not(:last-child)::after,
-    .c-step.active:not(:last-child)::after {
-      background: var(--blue);
-    }
-
-    .c-step-num {
-      width: 36px; height: 36px;
-      border-radius: 50%;
-      background: var(--gray-100);
-      border: 2px solid var(--gray-300);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: var(--gray-500);
-      position: relative;
-      z-index: 1;
-      flex-shrink: 0;
-      transition: var(--t);
-    }
-
-    .c-step.active .c-step-num {
-      background: var(--blue);
-      border-color: var(--blue);
-      color: var(--white);
-      box-shadow: 0 4px 16px rgba(30,79,160,0.35);
-    }
-
-    .c-step.done .c-step-num {
-      background: var(--green);
-      border-color: var(--green);
-      color: var(--white);
-    }
-
-    .c-step-label {
-      font-size: 0.75rem;
-      font-weight: 600;
-      color: var(--gray-500);
-      white-space: nowrap;
-      transition: color var(--t);
-    }
-
-    .c-step.active .c-step-label { color: var(--blue); }
-    .c-step.done .c-step-label   { color: var(--green); }
-
-    /* ══════════════════════════════════════
-       FORM SECTIONS (STEPS)
-    ══════════════════════════════════════ */
-    .c-form-section {
-      display: none;
-      animation: formSlideIn 0.4s ease both;
-    }
-
-    .c-form-section.visible { display: block; }
-
-    @keyframes formSlideIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-
-    .c-card {
-      background: var(--white);
-      border-radius: var(--r-xl);
-      padding: 40px;
-      box-shadow: var(--shadow-sm);
-      border: 1px solid rgba(0,0,0,0.05);
-      margin-bottom: 24px;
-    }
-
-    .c-card-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: var(--navy);
-      margin-bottom: 6px;
-    }
-
-    .c-card-sub {
-      font-size: 0.875rem;
-      color: var(--gray-500);
-      margin-bottom: 32px;
-      line-height: 1.6;
-    }
-
-    /* ══════════════════════════════════════
-       FORM ELEMENTS
-    ══════════════════════════════════════ */
-    .f-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      margin-bottom: 20px;
-    }
-
-    .f-row.full { grid-template-columns: 1fr; }
-
-    .f-group {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-
-    .f-label {
-      font-size: 0.78rem;
-      font-weight: 600;
-      color: var(--gray-700);
-      letter-spacing: 0.03em;
-    }
-
-    .f-label span { color: var(--red); margin-left: 2px; }
-
-    .f-input, .f-select, .f-textarea {
-      width: 100%;
-      padding: 13px 16px;
-      border: 1.5px solid var(--gray-300);
-      border-radius: var(--r);
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.9rem;
-      color: var(--text);
-      background: var(--white);
-      transition: border-color var(--t), box-shadow var(--t);
-      outline: none;
-      appearance: none;
-    }
-
-    .f-input::placeholder, .f-textarea::placeholder { color: var(--gray-500); }
-
-    .f-input:focus, .f-select:focus, .f-textarea:focus {
-      border-color: var(--blue-soft);
-      box-shadow: 0 0 0 3px rgba(37,99,196,0.1);
-    }
-
-    .f-input.error, .f-select.error { border-color: var(--red); }
-
-    .f-error {
-      font-size: 0.75rem;
-      color: var(--red);
-      display: none;
-    }
-
-    .f-error.show { display: block; }
-
-    .f-select-wrap { position: relative; }
-
-    .f-select-wrap::after {
-      content: '';
-      position: absolute;
-      right: 14px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 0; height: 0;
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
-      border-top: 5px solid var(--gray-500);
-      pointer-events: none;
-    }
-
-    .f-textarea { resize: vertical; min-height: 100px; line-height: 1.6; }
-
-    /* ── Consultation type cards ── */
-    .consult-types {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
-      margin-bottom: 8px;
-    }
-
-    .consult-type {
-      position: relative;
-      cursor: pointer;
-    }
-
-    .consult-type input {
-      position: absolute;
-      opacity: 0;
-      pointer-events: none;
-    }
-
-    .consult-type-inner {
-      border: 1.5px solid var(--gray-300);
-      border-radius: var(--r-lg);
-      padding: 18px 14px;
-      text-align: center;
-      transition: var(--t);
-      background: var(--white);
-    }
-
-    .consult-type:hover .consult-type-inner {
-      border-color: var(--blue-soft);
-      background: var(--off-white);
-    }
-
-    .consult-type input:checked + .consult-type-inner {
-      border-color: var(--blue);
-      background: rgba(30,79,160,0.04);
-      box-shadow: 0 0 0 3px rgba(30,79,160,0.08);
-    }
-
-    .consult-type-icon {
-      width: 44px; height: 44px;
-      border-radius: 50%;
-      background: var(--gray-100);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 10px;
-      transition: var(--t);
-    }
-
-    .consult-type input:checked ~ .consult-type-inner .consult-type-icon {
-      background: rgba(30,79,160,0.1);
-    }
-
-    .consult-type-icon svg { color: var(--blue); }
-
-    .consult-type-label {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.75rem;
-      font-weight: 700;
-      color: var(--navy);
-      margin-bottom: 4px;
-    }
-
-    .consult-type-sub {
-      font-size: 0.68rem;
-      color: var(--gray-500);
-      line-height: 1.4;
-    }
-
-    .consult-note {
-      background: rgba(30,79,160,0.04);
-      border: 1px solid rgba(30,79,160,0.12);
-      border-radius: var(--r);
-      padding: 14px 16px;
-      font-size: 0.8rem;
-      color: var(--blue);
-      margin-top: 12px;
-      line-height: 1.6;
-      display: none;
-    }
-
-    .consult-note.show { display: block; }
-
-    /* ── ONLINE TIMES NOTICE ── */
-    .online-times {
-      background: var(--gold-pale);
-      border: 1px solid rgba(201,168,76,0.3);
-      border-radius: var(--r-lg);
-      padding: 20px 22px;
-      margin-top: 20px;
-      display: none;
-    }
-
-    .online-times.show { display: block; }
-
-    .online-times-title {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.78rem;
-      font-weight: 700;
-      color: var(--navy);
-      margin-bottom: 10px;
-      letter-spacing: 0.03em;
-    }
-
-    .online-times-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8px;
-    }
-
-    .online-time-item {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 0.78rem;
-      color: var(--gray-700);
-    }
-
-    .online-time-item svg { color: var(--gold); flex-shrink: 0; }
-
-    /* ══════════════════════════════════════
-       PAYMENT SECTION (STEP 2)
-    ══════════════════════════════════════ */
-    .payment-notice {
-      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
-      border-radius: var(--r-xl);
-      padding: 36px;
-      margin-bottom: 24px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .payment-notice::before {
-      content: '';
-      position: absolute;
-      top: -60px; right: -60px;
-      width: 200px; height: 200px;
-      border-radius: 50%;
-      background: rgba(201,168,76,0.08);
-    }
-
-    .payment-notice-top {
-      display: flex;
-      align-items: flex-start;
-      gap: 16px;
-      margin-bottom: 24px;
-    }
-
-    .payment-notice-icon {
-      width: 52px; height: 52px;
-      border-radius: 50%;
-      background: rgba(201,168,76,0.15);
-      border: 1px solid rgba(201,168,76,0.3);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-
-    .payment-notice-icon svg { color: var(--gold); }
-
-    .payment-notice h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: var(--white);
-      margin-bottom: 6px;
-      line-height: 1.2;
-    }
-
-    .payment-notice p {
-      font-size: 0.82rem;
-      color: rgba(255,255,255,0.6);
-      line-height: 1.65;
-    }
-
-    .payment-amount {
-      display: flex;
-      align-items: baseline;
-      gap: 6px;
-      margin-bottom: 24px;
-      padding-bottom: 24px;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-    }
-
-    .payment-amount strong {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 3rem;
-      font-weight: 700;
-      color: var(--gold-light);
-      line-height: 1;
-    }
-
-    .payment-amount span {
-      font-size: 0.85rem;
-      color: rgba(255,255,255,0.5);
-    }
-
-    .payment-includes {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .payment-include-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      font-size: 0.82rem;
-      color: rgba(255,255,255,0.7);
-      line-height: 1.5;
-    }
-
-    .payment-include-item svg { color: var(--gold); flex-shrink: 0; margin-top: 2px; }
-
-    /* Bank details card */
-    .bank-card {
-      background: var(--white);
-      border-radius: var(--r-xl);
-      padding: 32px 36px;
-      box-shadow: var(--shadow-md);
-      border: 1px solid var(--gray-100);
-      margin-bottom: 24px;
-      position: relative;
-    }
-
-    .bank-card-title {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--gray-500);
-      margin-bottom: 20px;
-    }
-
-    .bank-logo-row {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      margin-bottom: 20px;
-    }
-
-    .bank-logo {
-      width: 48px; height: 48px;
-      border-radius: var(--r);
-      background: #1b3c7a;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.62rem;
-      font-weight: 800;
-      color: var(--white);
-      letter-spacing: 0.04em;
-      flex-shrink: 0;
-    }
-
-    .bank-name {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--navy);
-    }
-
-    .bank-name small {
-      display: block;
-      font-size: 0.72rem;
-      font-weight: 500;
-      color: var(--gray-500);
-      margin-top: 2px;
-    }
-
-    .bank-detail-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 14px 0;
-      border-bottom: 1px solid var(--gray-100);
-    }
-
-    .bank-detail-row:last-child { border-bottom: none; }
-
-    .bank-detail-label {
-      font-size: 0.75rem;
-      color: var(--gray-500);
-      font-weight: 500;
-    }
-
-    .bank-detail-value {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.9rem;
-      font-weight: 700;
-      color: var(--navy);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .account-number {
-      font-size: 1.15rem;
-      letter-spacing: 0.06em;
-      color: var(--blue);
-    }
-
-    .copy-btn {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      background: var(--gray-100);
-      border: 1px solid var(--gray-300);
-      border-radius: 6px;
-      padding: 5px 12px;
-      font-size: 0.72rem;
-      font-weight: 600;
-      color: var(--gray-700);
-      transition: var(--t);
-      cursor: pointer;
-    }
-
-    .copy-btn:hover { background: var(--blue); color: var(--white); border-color: var(--blue); }
-    .copy-btn svg { width: 12px; height: 12px; }
-
-    /* Trust statement */
-    .trust-statement {
-      background: var(--green-soft);
-      border: 1px solid rgba(26,138,74,0.18);
-      border-radius: var(--r-lg);
-      padding: 20px 22px;
-      display: flex;
-      gap: 14px;
-      align-items: flex-start;
-      margin-bottom: 24px;
-    }
-
-    .trust-statement svg { color: var(--green); flex-shrink: 0; margin-top: 2px; }
-
-    .trust-statement p {
-      font-size: 0.82rem;
-      color: #1a4a2e;
-      line-height: 1.65;
-    }
-
-    .trust-statement p strong {
-      display: block;
-      font-weight: 700;
-      margin-bottom: 3px;
-      font-size: 0.85rem;
-    }
-
-    /* ══════════════════════════════════════
-       CONFIRM FORM
-    ══════════════════════════════════════ */
-    .confirm-row {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      margin-bottom: 20px;
-    }
-
-    .confirm-row input[type="checkbox"] {
-      width: 18px; height: 18px;
-      accent-color: var(--blue);
-      flex-shrink: 0;
-      margin-top: 2px;
-      cursor: pointer;
-    }
-
-    .confirm-row label {
-      font-size: 0.82rem;
-      color: var(--gray-700);
-      line-height: 1.6;
-      cursor: pointer;
-    }
-
-    /* ══════════════════════════════════════
-       BUTTONS
-    ══════════════════════════════════════ */
-    .btn-full {
-      width: 100%;
-      padding: 16px 24px;
-      border-radius: var(--r);
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      font-size: 0.9rem;
-      letter-spacing: 0.03em;
-      transition: var(--t);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-
-    .btn-primary-page {
-      background: var(--blue);
-      color: var(--white);
-      box-shadow: 0 6px 20px rgba(30,79,160,0.35);
-    }
-
-    .btn-primary-page:hover {
-      background: var(--navy-light);
-      transform: translateY(-2px);
-      box-shadow: 0 10px 28px rgba(30,79,160,0.45);
-    }
-
-    .btn-wa {
-      background: #25d366;
-      color: var(--white);
-      box-shadow: 0 6px 20px rgba(37,211,102,0.35);
-    }
-
-    .btn-wa:hover {
-      background: #1dba58;
-      transform: translateY(-2px);
-    }
-
-    .btn-ghost {
-      background: transparent;
-      color: var(--gray-700);
-      border: 1.5px solid var(--gray-300);
-    }
-
-    .btn-ghost:hover {
-      border-color: var(--blue);
-      color: var(--blue);
-    }
-
-    .btn-row {
-      display: flex;
-      gap: 12px;
-      margin-top: 8px;
-    }
-
-    .btn-row .btn-full:first-child { flex: 0 0 auto; width: auto; padding: 16px 28px; }
-
-    /* ══════════════════════════════════════
-       SUCCESS SCREEN
-    ══════════════════════════════════════ */
-    #step-success {
-      text-align: center;
-      padding: 20px 0;
-    }
-
-    .success-icon {
-      width: 80px; height: 80px;
-      border-radius: 50%;
-      background: var(--green-soft);
-      border: 2px solid rgba(26,138,74,0.2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 24px;
-    }
-
-    .success-icon svg { color: var(--green); }
-
-    #step-success h2 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 2rem;
-      font-weight: 700;
-      color: var(--navy);
-      margin-bottom: 12px;
-    }
-
-    #step-success p {
-      color: var(--gray-500);
-      font-size: 0.9rem;
-      max-width: 440px;
-      margin: 0 auto 32px;
-      line-height: 1.7;
-    }
-
-    /* ══════════════════════════════════════
-       SIDEBAR
-    ══════════════════════════════════════ */
-    .c-sidebar {
-      position: sticky;
-      top: 80px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .sidebar-card {
-      background: var(--white);
-      border-radius: var(--r-xl);
-      padding: 28px;
-      box-shadow: var(--shadow-sm);
-      border: 1px solid rgba(0,0,0,0.05);
-    }
-
-    .sidebar-card-title {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--gray-500);
-      margin-bottom: 18px;
-    }
-
-    /* Summary card */
-    .summary-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      padding: 10px 0;
-      border-bottom: 1px solid var(--gray-100);
-      gap: 12px;
-    }
-
-    .summary-item:last-child { border-bottom: none; }
-
-    .summary-label {
-      font-size: 0.78rem;
-      color: var(--gray-500);
-      flex-shrink: 0;
-    }
-
-    .summary-value {
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: var(--navy);
-      text-align: right;
-    }
-
-    /* Hours */
-    .hours-list {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .hours-row {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-    }
-
-    .hours-row span:first-child { color: var(--gray-500); }
-    .hours-row span:last-child { font-weight: 600; color: var(--navy); }
-    .hours-row.today span:last-child { color: var(--green); }
-
-    /* Contact card */
-    .contact-link {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding: 12px 14px;
-      border-radius: var(--r);
-      background: var(--off-white);
-      border: 1px solid var(--gray-100);
-      margin-bottom: 10px;
-      transition: var(--t);
-      font-size: 0.82rem;
-      font-weight: 500;
-      color: var(--navy);
-    }
-
-    .contact-link:hover { border-color: var(--blue); background: rgba(30,79,160,0.04); }
-
-    .contact-link svg { color: var(--blue); flex-shrink: 0; }
-
-    .contact-link:last-child { margin-bottom: 0; }
-
-    /* Security badge */
-    .security-badge {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding: 16px;
-      background: var(--off-white);
-      border-radius: var(--r-lg);
-      border: 1px solid var(--gray-100);
-    }
-
-    .security-badge svg { color: var(--green); flex-shrink: 0; }
-
-    .security-badge p {
-      font-size: 0.75rem;
-      color: var(--gray-700);
-      line-height: 1.5;
-    }
-
-    .security-badge p strong { color: var(--navy); }
-
-    /* ══════════════════════════════════════
-       FOOTER
-    ══════════════════════════════════════ */
-    .c-footer {
-      background: var(--navy);
-      padding: 48px 5% 28px;
-    }
-
-    .c-footer-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .c-footer-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-bottom: 28px;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-      margin-bottom: 28px;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .c-footer-logo {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 800;
-      font-size: 1rem;
-      color: var(--white);
-    }
-
-    .c-footer-logo span { color: var(--gold); }
-
-    .c-footer-links {
-      display: flex;
-      gap: 28px;
-      flex-wrap: wrap;
-    }
-
-    .c-footer-links a {
-      font-size: 0.8rem;
-      color: rgba(255,255,255,0.45);
-      transition: color var(--t);
-    }
-
-    .c-footer-links a:hover { color: var(--gold); }
-
-    .c-footer-bottom {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .c-footer-bottom p {
-      font-size: 0.75rem;
-      color: rgba(255,255,255,0.3);
-    }
-
-    .c-footer-credentials {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 0.72rem;
-      color: rgba(255,255,255,0.35);
-    }
-
-    .c-footer-credentials svg { color: var(--gold); opacity: 0.7; }
-
-    /* ══════════════════════════════════════
-       ANIMATIONS
-    ══════════════════════════════════════ */
-    .fade-in {
-      opacity: 0;
-      transform: translateY(16px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-
-    .fade-in.visible {
-      opacity: 1;
-      transform: none;
-    }
-
-    /* ══════════════════════════════════════
-       RESPONSIVE
-    ══════════════════════════════════════ */
-    @media (max-width: 1024px) {
-      .c-main { grid-template-columns: 1fr; }
-      .c-sidebar { position: static; }
-      .c-hero-inner { grid-template-columns: 1fr; gap: 40px; }
-      .c-doctor-card { max-width: 480px; }
-    }
-
-    @media (max-width: 640px) {
-      .c-hero { padding: 100px 5% 60px; }
-      .c-main { padding: 40px 5% 72px; }
-      .c-card { padding: 28px 20px; }
-      .f-row { grid-template-columns: 1fr; }
-      .consult-types { grid-template-columns: 1fr; }
-      .payment-notice { padding: 24px; }
-      .bank-card { padding: 24px 20px; }
-      .btn-row { flex-direction: column-reverse; }
-      .c-steps { gap: 0; }
-      .c-step-label { display: none; }
-      .online-times-grid { grid-template-columns: 1fr; }
-      .c-hero h1 { font-size: 1.9rem; }
-      .c-footer-top { flex-direction: column; align-items: flex-start; }
-      .c-footer-bottom { flex-direction: column; align-items: flex-start; }
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="Consult.css">
 </head>
 <body>
 
-  <!-- ── NAVBAR ──────────────────────────── -->
-  <nav class="c-nav">
-    <div class="c-nav-inner">
-      <div class="c-nav-logo">Bright Beam <span>Dental Care</span></div>
-      <a href="index.html" class="c-nav-back">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-        Back to Home
-      </a>
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">Bright Beam <span>Dental Care</span></div>
+    <a href="index.html" class="nav-back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      Back to Site
+    </a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <div class="progress-header" id="progressHeader">
+    <div class="progress-inner">
+      <div class="progress-top">
+        <span class="progress-label" id="progressLabel">Step 1 of 4</span>
+        <span class="progress-fraction" id="progressFraction">Your Details</span>
+      </div>
+      <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:25%"></div></div>
+      <div class="progress-steps">
+        <div class="progress-step active" id="ps1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Your Details</div>
+        <div class="progress-step" id="ps2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Consultation</div>
+        <div class="progress-step" id="ps3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Payment</div>
+        <div class="progress-step" id="ps4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Done</div>
+      </div>
     </div>
-  </nav>
+  </div>
 
+  <main class="main">
 
-  <!-- ── HERO ────────────────────────────── -->
-  <header class="c-hero">
-    <div class="c-hero-inner">
+    <!-- STEP 1 -->
+    <section class="section active" id="s1">
+      <div class="guide-strip">
+        <div class="guide-strip-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+        <div class="guide-strip-text"><strong>This takes less than 2 minutes</strong><p>Tell Dr. Egbewole a little about yourself. Your details are private and used only to prepare for your consultation.</p></div>
+      </div>
 
-      <div>
-        <div class="c-hero-label">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          Verified Dental Practice — Benin City
-        </div>
-        <h1>Book Your <em>Expert Consultation</em> Today</h1>
-        <p>Complete the short form below. Your details go directly to (RDST). Toyin Racheal Egbewole — a Registered Dental Surgery Technician with over 10 years of trusted practice.</p>
-
-        <div class="c-trust-pills">
-          <div class="c-pill">
-            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            RDST Certified
+      <div class="q-card">
+        <div class="q-num"><span>1</span>Your Name</div>
+        <h2 class="q-title">What is your name?</h2>
+        <p class="q-hint">Enter your name so Dr. Egbewole can address you correctly when she reaches out.</p>
+        <div class="f-row">
+          <div class="f-group">
+            <label class="f-label" for="fName">First name <em>*</em></label>
+            <input class="f-input" type="text" id="fName" placeholder="e.g. Amaka" autocomplete="given-name"/>
+            <span class="f-err" id="e-fName">Please enter your first name</span>
           </div>
-          <div class="c-pill">
-            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            Mon – Sat, 10 AM – 7 PM
-          </div>
-          <div class="c-pill">
-            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            Walk-in &amp; Online
-          </div>
-          <div class="c-pill">
-            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            1,200+ Patients
+          <div class="f-group">
+            <label class="f-label" for="lName">Last name <em>*</em></label>
+            <input class="f-input" type="text" id="lName" placeholder="e.g. Okafor" autocomplete="family-name"/>
+            <span class="f-err" id="e-lName">Please enter your last name</span>
           </div>
         </div>
       </div>
 
-      <div class="c-doctor-card">
-        <div class="c-doctor-top">
-          <img class="c-doctor-avatar" src="images/founder.jpeg" alt="(RDST). Toyin Racheal Egbewole" />
-          <div class="c-doctor-info">
-            <strong>(RDST). Toyin Racheal Egbewole</strong>
-            <span>Registered Dental Surgery Technician</span>
-            <small>RDST · 10+ Years Experience · Benin City</small>
+      <div class="q-card">
+        <div class="q-num"><span>2</span>Contact</div>
+        <h2 class="q-title">How do we reach you?</h2>
+        <p class="q-hint">Dr. Egbewole will use your phone number to confirm your appointment. Make sure it is active on WhatsApp.</p>
+        <div class="f-row">
+          <div class="f-group">
+            <label class="f-label" for="phone">Phone number <em>*</em></label>
+            <input class="f-input" type="tel" id="phone" placeholder="e.g. 08012345678" autocomplete="tel"/>
+            <span class="f-err" id="e-phone">Enter a valid Nigerian phone number</span>
+            <div class="f-helper"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Should be active on WhatsApp</div>
+          </div>
+          <div class="f-group">
+            <label class="f-label" for="email">Email address</label>
+            <input class="f-input" type="email" id="email" placeholder="yourname@gmail.com" autocomplete="email"/>
+            <div class="f-helper">Optional — for appointment reminders</div>
           </div>
         </div>
-
-        <div class="c-avail-list">
-          <div class="c-avail-item">
-            <span>Monday – Friday</span>
-            <span class="c-avail-badge badge-open">10 AM – 7 PM</span>
+        <div class="f-row">
+          <div class="f-group">
+            <label class="f-label" for="age">Your age <em>*</em></label>
+            <input class="f-input" type="number" id="age" placeholder="e.g. 28" min="5" max="100"/>
+            <span class="f-err" id="e-age">Please enter your age</span>
           </div>
-          <div class="c-avail-item">
-            <span>Saturday</span>
-            <span class="c-avail-badge badge-open">10 AM – 7 PM</span>
-          </div>
-          <div class="c-avail-item">
-            <span>Sunday</span>
-            <span class="c-avail-badge badge-closed">Closed</span>
-          </div>
-          <div class="c-avail-item">
-            <span>Online Sessions</span>
-            <span class="c-avail-badge badge-open">By Appointment</span>
+          <div class="f-group">
+            <label class="f-label" for="state">State of residence <em>*</em></label>
+            <div class="f-select-wrap">
+              <select class="f-select" id="state">
+                <option value="">Select your state...</option>
+                <option>Edo State</option><option>Delta State</option>
+                <option>Lagos State</option><option>Abuja (FCT)</option>
+                <option>Rivers State</option><option>Ondo State</option>
+                <option>Ekiti State</option><option>Oyo State</option>
+                <option>Anambra State</option><option>Imo State</option>
+                <option>Kano State</option><option>Kaduna State</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <span class="f-err" id="e-state">Please select your state</span>
           </div>
         </div>
       </div>
 
-    </div>
-  </header>
+      <div class="btn-bar">
+        <button class="btn-next" id="s1Next">Continue<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+      </div>
+    </section>
 
+    <!-- STEP 2 -->
+    <section class="section" id="s2">
+      <div class="guide-strip">
+        <div class="guide-strip-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <div class="guide-strip-text"><strong>Tell us why you are coming in</strong><p>Select your main concern and how you would like to consult with Dr. Egbewole. This helps her prepare fully for your session.</p></div>
+      </div>
 
-  <!-- ── MAIN ─────────────────────────────── -->
-  <main class="c-main">
-
-    <div class="c-form-col">
-
-      <!-- Steps indicator -->
-      <div class="c-steps" id="stepsBar">
-        <div class="c-step active" id="step-ind-1">
-          <div class="c-step-num">1</div>
-          <span class="c-step-label">Your Details</span>
+      <div class="q-card">
+        <div class="q-num"><span>3</span>Dental Concern</div>
+        <h2 class="q-title">What brings you in?</h2>
+        <p class="q-hint">Select your main concern. You can add more detail in the notes below.</p>
+        <div class="chip-grid" id="concernGrid">
+          <label class="chip"><input type="radio" name="concern" value="Toothache or pain"/><span class="chip-inner">Toothache / Pain</span></label>
+          <label class="chip"><input type="radio" name="concern" value="Teeth cleaning (scaling and polishing)"/><span class="chip-inner">Teeth Cleaning</span></label>
+          <label class="chip"><input type="radio" name="concern" value="Teeth whitening"/><span class="chip-inner">Teeth Whitening</span></label>
+          <label class="chip"><input type="radio" name="concern" value="Tooth filling or extraction"/><span class="chip-inner">Filling / Extraction</span></label>
+          <label class="chip"><input type="radio" name="concern" value="Missing teeth (dentures)"/><span class="chip-inner">Missing Teeth</span></label>
+          <label class="chip"><input type="radio" name="concern" value="Braces or teeth alignment"/><span class="chip-inner">Braces / Alignment</span></label>
+          <label class="chip"><input type="radio" name="concern" value="Gum problems or bleeding gums"/><span class="chip-inner">Gum Problems</span></label>
+          <label class="chip"><input type="radio" name="concern" value="Mouth odour (bad breath)"/><span class="chip-inner">Mouth Odour</span></label>
+          <label class="chip"><input type="radio" name="concern" value="Routine check-up"/><span class="chip-inner">Routine Check-up</span></label>
+          <label class="chip"><input type="radio" name="concern" value="Other concern"/><span class="chip-inner">Other</span></label>
         </div>
-        <div class="c-step" id="step-ind-2">
-          <div class="c-step-num">2</div>
-          <span class="c-step-label">Payment</span>
-        </div>
-        <div class="c-step" id="step-ind-3">
-          <div class="c-step-num">3</div>
-          <span class="c-step-label">Confirm</span>
+        <span class="f-err" id="e-concern" style="margin-top:10px;display:none">Please select your main concern</span>
+        <div class="f-group" style="margin-top:20px">
+          <label class="f-label" for="notes">Additional notes (optional)</label>
+          <textarea class="f-textarea" id="notes" placeholder="How long have you had this problem? Any previous treatment? Anything else Dr. Egbewole should know..."></textarea>
         </div>
       </div>
 
-
-      <!-- ── STEP 1: Details ── -->
-      <div class="c-form-section visible" id="step-1">
-
-        <div class="c-card fade-in visible">
-          <h2 class="c-card-title">Tell Us About You</h2>
-          <p class="c-card-sub">Fill in your details below. All information is kept strictly confidential and used only to prepare for your consultation.</p>
-
-          <div class="f-row">
-            <div class="f-group">
-              <label class="f-label" for="firstName">First Name <span>*</span></label>
-              <input class="f-input" type="text" id="firstName" placeholder="e.g. Amaka" autocomplete="given-name" />
-              <span class="f-error" id="err-firstName">Please enter your first name</span>
-            </div>
-            <div class="f-group">
-              <label class="f-label" for="lastName">Last Name <span>*</span></label>
-              <input class="f-input" type="text" id="lastName" placeholder="e.g. Okafor" autocomplete="family-name" />
-              <span class="f-error" id="err-lastName">Please enter your last name</span>
-            </div>
-          </div>
-
-          <div class="f-row">
-            <div class="f-group">
-              <label class="f-label" for="phone">Phone Number <span>*</span></label>
-              <input class="f-input" type="tel" id="phone" placeholder="e.g. 08012345678" autocomplete="tel" />
-              <span class="f-error" id="err-phone">Please enter a valid phone number</span>
-            </div>
-            <div class="f-group">
-              <label class="f-label" for="email">Email Address</label>
-              <input class="f-input" type="email" id="email" placeholder="e.g. yourname@gmail.com" autocomplete="email" />
-            </div>
-          </div>
-
-          <div class="f-row">
-            <div class="f-group">
-              <label class="f-label" for="age">Age <span>*</span></label>
-              <input class="f-input" type="number" id="age" placeholder="e.g. 28" min="5" max="100" />
-              <span class="f-error" id="err-age">Please enter your age</span>
-            </div>
-            <div class="f-group">
-              <label class="f-label" for="state">State of Residence <span>*</span></label>
-              <div class="f-select-wrap">
-                <select class="f-select" id="state">
-                  <option value="">Select state...</option>
-                  <option>Edo State</option>
-                  <option>Delta State</option>
-                  <option>Lagos State</option>
-                  <option>Abuja (FCT)</option>
-                  <option>Rivers State</option>
-                  <option>Ondo State</option>
-                  <option>Ekiti State</option>
-                  <option>Oyo State</option>
-                  <option>Anambra State</option>
-                  <option>Imo State</option>
-                  <option>Other</option>
-                </select>
-              </div>
-              <span class="f-error" id="err-state">Please select your state</span>
-            </div>
-          </div>
-
-          <div class="f-row full">
-            <div class="f-group">
-              <label class="f-label" for="concern">What is your main dental concern? <span>*</span></label>
-              <div class="f-select-wrap">
-                <select class="f-select" id="concern">
-                  <option value="">Select concern...</option>
-                  <option>Toothache or pain</option>
-                  <option>Teeth cleaning (scaling &amp; polishing)</option>
-                  <option>Teeth whitening</option>
-                  <option>Tooth filling or extraction</option>
-                  <option>Missing teeth (dentures)</option>
-                  <option>Braces / teeth alignment</option>
-                  <option>Gum problems / bleeding gums</option>
-                  <option>Bad breath (mouth odour)</option>
-                  <option>Routine check-up</option>
-                  <option>Other</option>
-                </select>
-              </div>
-              <span class="f-error" id="err-concern">Please select your main concern</span>
-            </div>
-          </div>
-
-          <div class="f-row full">
-            <div class="f-group">
-              <label class="f-label" for="notes">Additional notes (optional)</label>
-              <textarea class="f-textarea" id="notes" placeholder="Describe your symptoms, how long you've had them, or anything else Dr. Egbewole should know before your consultation..."></textarea>
-            </div>
-          </div>
+      <div class="q-card">
+        <div class="q-num"><span>4</span>Consultation Type</div>
+        <h2 class="q-title">How would you like to meet?</h2>
+        <p class="q-hint">All three options are available at the same &#x20A6;10,000 fee. Online sessions run at specific times only.</p>
+        <div class="tile-grid cols-3" id="typeGrid">
+          <label class="tile"><input type="radio" name="ctype" value="Walk-In (Clinic)" checked/>
+            <div class="tile-inner"><div class="tile-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><div class="tile-name">Walk-In</div><div class="tile-desc">Visit the clinic on Airport Road, Ihama</div></div>
+          </label>
+          <label class="tile"><input type="radio" name="ctype" value="Video Call (Online)"/>
+            <div class="tile-inner"><div class="tile-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div><div class="tile-name">Video Call</div><div class="tile-desc">Face-to-face via video — by appointment</div></div>
+          </label>
+          <label class="tile"><input type="radio" name="ctype" value="WhatsApp (Voice or Chat)"/>
+            <div class="tile-inner"><div class="tile-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><div class="tile-name">WhatsApp</div><div class="tile-desc">Voice or chat — scheduled times only</div></div>
+          </label>
         </div>
-
-        <!-- Consultation type -->
-        <div class="c-card fade-in visible">
-          <h2 class="c-card-title">Consultation Type</h2>
-          <p class="c-card-sub">Choose how you would like to meet with (RDST). Toyin Racheal Egbewole. All options are available at a fixed consultation fee of <strong>&#x20A6;10,000</strong>.</p>
-
-          <div class="consult-types">
-
-            <label class="consult-type">
-              <input type="radio" name="consultType" value="in-person" checked />
-              <div class="consult-type-inner">
-                <div class="consult-type-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                </div>
-                <div class="consult-type-label">Walk-In</div>
-                <div class="consult-type-sub">Visit the clinic in person — Airport Road, Ihama, Benin City</div>
-              </div>
-            </label>
-
-            <label class="consult-type">
-              <input type="radio" name="consultType" value="video-call" />
-              <div class="consult-type-inner">
-                <div class="consult-type-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
-                </div>
-                <div class="consult-type-label">Video Call</div>
-                <div class="consult-type-sub">Face-to-face consultation via video — available by appointment</div>
-              </div>
-            </label>
-
-            <label class="consult-type">
-              <input type="radio" name="consultType" value="whatsapp" />
-              <div class="consult-type-inner">
-                <div class="consult-type-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" style="color:#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                </div>
-                <div class="consult-type-label">WhatsApp</div>
-                <div class="consult-type-sub">Chat or voice note consultation — available at scheduled times only</div>
-              </div>
-            </label>
-
+        <div class="times-panel" id="timesPanel">
+          <div class="times-panel-title">Online Session Times</div>
+          <div class="times-grid">
+            <div class="time-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Mon &amp; Wed: 5 PM – 7 PM</div>
+            <div class="time-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Friday: 4 PM – 6 PM</div>
+            <div class="time-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Saturday: 11 AM – 2 PM</div>
+            <div class="time-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Subject to availability</div>
           </div>
-
-          <!-- Online availability notice -->
-          <div class="online-times" id="onlineTimes">
-            <div class="online-times-title">Online Consultation Availability</div>
-            <div class="online-times-grid">
-              <div class="online-time-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                Mon &amp; Wed: 5 PM – 7 PM
-              </div>
-              <div class="online-time-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                Fri: 4 PM – 6 PM
-              </div>
-              <div class="online-time-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                Sat: 11 AM – 2 PM
-              </div>
-              <div class="online-time-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                Subject to availability
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="btn-row">
-          <button class="btn-full btn-primary-page" id="toStep2">
-            Continue to Payment
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-          </button>
-        </div>
-
-      </div>
-
-
-      <!-- ── STEP 2: Payment ── -->
-      <div class="c-form-section" id="step-2">
-
-        <div class="payment-notice fade-in">
-          <div class="payment-notice-top">
-            <div class="payment-notice-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
-            </div>
-            <div>
-              <h3>Consultation Fee Required</h3>
-              <p>A one-time payment of &#x20A6;10,000 is required to secure your consultation slot with Dr. Egbewole. This covers a full clinical assessment and personalised treatment plan.</p>
-            </div>
-          </div>
-
-          <div class="payment-amount">
-            <strong>&#x20A6;10,000</strong>
-            <span>One-time consultation fee</span>
-          </div>
-
-          <div class="payment-includes">
-            <div class="payment-include-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              Full oral health examination by Dr. Egbewole (RDST)
-            </div>
-            <div class="payment-include-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              Written diagnosis and personalised treatment plan
-            </div>
-            <div class="payment-include-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              Clear pricing breakdown for any recommended treatment
-            </div>
-            <div class="payment-include-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              Direct follow-up contact from (RDST). Toyin Racheal Egbewole's office
-            </div>
-          </div>
-        </div>
-
-        <!-- Bank details -->
-        <div class="bank-card fade-in">
-          <div class="bank-card-title">Transfer Payment To</div>
-
-          <div class="bank-logo-row">
-            <div class="bank-logo">ZENITH</div>
-            <div class="bank-name">
-              Zenith Bank
-              <small>Nigeria</small>
-            </div>
-          </div>
-
-          <div class="bank-detail-row">
-            <span class="bank-detail-label">Account Number</span>
-            <div class="bank-detail-value">
-              <span class="account-number" id="acctNum">2369040828</span>
-              <button class="copy-btn" id="copyAcct" title="Copy account number">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                Copy
-              </button>
-            </div>
-          </div>
-
-          <div class="bank-detail-row">
-            <span class="bank-detail-label">Account Name</span>
-            <div class="bank-detail-value">Egbewole Toyin Rachael</div>
-          </div>
-
-          <div class="bank-detail-row">
-            <span class="bank-detail-label">Bank</span>
-            <div class="bank-detail-value">Zenith Bank</div>
-          </div>
-
-          <div class="bank-detail-row">
-            <span class="bank-detail-label">Amount</span>
-            <div class="bank-detail-value" style="color:var(--blue); font-size:1.1rem">&#x20A6;10,000</div>
-          </div>
-        </div>
-
-        <!-- Trust statement -->
-        <div class="trust-statement fade-in">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          <p>
-            <strong>Your payment is safe. This is a legitimate, verified dental practice.</strong>
-            Bright Beam Dental Care is operated by (RDST). Toyin Racheal Egbewole — a Registered Dental Surgery Technician (RDST) with over 10 years of clinical practice in Benin City. Once your transfer is confirmed, we will contact you personally within 24 hours to schedule your appointment. If you have any concerns, call or WhatsApp us directly on <a href="tel:+2347039625531" style="color:var(--green);font-weight:600">+234 703 962 5531</a> before paying.
-          </p>
-        </div>
-
-        <div class="c-card fade-in">
-          <h2 class="c-card-title">Confirm Your Transfer</h2>
-          <p class="c-card-sub">Once you have made the &#x20A6;10,000 transfer, check the box below and click "I Have Paid" — we will verify and reach out to you.</p>
-
-          <div class="confirm-row">
-            <input type="checkbox" id="confirmPaid" />
-            <label for="confirmPaid">I have transferred <strong>&#x20A6;10,000</strong> to Egbewole Toyin Rachael (Zenith Bank – 2369040828) as my consultation fee.</label>
-          </div>
-
-          <div class="confirm-row">
-            <input type="checkbox" id="confirmAccurate" />
-            <label for="confirmAccurate">The details I provided in Step 1 are accurate and I consent to (RDST). Toyin Racheal Egbewole contacting me via the phone number I provided.</label>
-          </div>
-        </div>
-
-        <div class="btn-row">
-          <button class="btn-full btn-ghost" id="backToStep1" style="width:auto; padding:16px 24px; flex:0 0 auto">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-            Back
-          </button>
-          <button class="btn-full btn-wa" id="toStep3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-            I Have Paid — Send via WhatsApp
-          </button>
-        </div>
-
-      </div>
-
-
-      <!-- ── STEP 3: Success ── -->
-      <div class="c-form-section" id="step-3">
-        <div class="c-card fade-in" id="step-success">
-          <div class="success-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          </div>
-          <h2>Booking Submitted</h2>
-          <p>Your consultation request and payment confirmation have been sent directly to (RDST). Toyin Racheal Egbewole via WhatsApp. Once your payment is verified, we will contact you within <strong>24 hours</strong> to confirm your appointment date and time.</p>
-
-          <div class="trust-statement" style="text-align:left; margin: 0 auto 32px; max-width:480px">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.45 2 2 0 0 1 3.59 1.26h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.86A16 16 0 0 0 15.14 16.1l.86-.86a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <p><strong>Need to follow up?</strong> Call or WhatsApp Dr. Egbewole directly on <a href="tel:+2347039625531" style="color:var(--green)">+234 703 962 5531</a> or email <a href="mailto:egbewolet@gmail.com" style="color:var(--blue)">egbewolet@gmail.com</a></p>
-          </div>
-
-          <a href="index.html" class="btn-full btn-ghost" style="max-width:280px; margin:0 auto">
-            Return to Homepage
-          </a>
         </div>
       </div>
 
-    </div>
+      <div class="btn-bar">
+        <button class="btn-back" id="s2Back"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>Back</button>
+        <button class="btn-next" id="s2Next">Continue to Payment<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+      </div>
+    </section>
 
+    <!-- STEP 3 -->
+    <section class="section" id="s3">
+      <div class="guide-strip">
+        <div class="guide-strip-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div class="guide-strip-text"><strong>One last step — a simple bank transfer</strong><p>Transfer &#x20A6;10,000 to the account below, confirm the two boxes, then send your booking via WhatsApp. Dr. Egbewole will contact you within 24 hours.</p></div>
+      </div>
 
-    <!-- ── SIDEBAR ───────────────────────── -->
-    <aside class="c-sidebar">
-
-      <!-- Booking summary -->
-      <div class="sidebar-card">
-        <div class="sidebar-card-title">Booking Summary</div>
-        <div class="summary-item">
-          <span class="summary-label">Registered Dental Surgery Technician</span>
-          <span class="summary-value">(RDST). Toyin Racheal Egbewole</span>
+      <div class="pay-hero">
+        <div class="pay-header">
+          <div class="pay-header-text">
+            <h2>Consultation Fee</h2>
+            <p>This one-time payment secures your dedicated session with Dr. Toyin Racheal Egbewole — Registered Dental Surgery Technician (RDST), 10+ years of clinical experience in Benin City.</p>
+          </div>
+          <div class="pay-badge"><strong>&#x20A6;10,000</strong><small>One-Time Fee</small></div>
         </div>
-        <div class="summary-item">
-          <span class="summary-label">Credential</span>
-          <span class="summary-value">RDST — 10+ yrs</span>
-        </div>
-        <div class="summary-item">
-          <span class="summary-label">Location</span>
-          <span class="summary-value">Airport Rd, Ihama<br>Benin City</span>
-        </div>
-        <div class="summary-item">
-          <span class="summary-label">Consultation Fee</span>
-          <span class="summary-value" style="color:var(--blue); font-size:1rem; font-family:'Montserrat',sans-serif">&#x20A6;10,000</span>
-        </div>
-        <div class="summary-item" id="summaryType">
-          <span class="summary-label">Type</span>
-          <span class="summary-value">Walk-In</span>
+        <div class="pay-includes">
+          <div class="pay-inc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Full oral examination by RDST</div>
+          <div class="pay-inc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Written diagnosis &amp; treatment plan</div>
+          <div class="pay-inc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Clear cost breakdown for all treatments</div>
+          <div class="pay-inc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Direct follow-up from Dr. Egbewole</div>
         </div>
       </div>
 
-      <!-- Working hours -->
-      <div class="sidebar-card">
-        <div class="sidebar-card-title">Working Hours</div>
-        <div class="hours-list">
-          <div class="hours-row"><span>Monday</span><span>10 AM – 7 PM</span></div>
-          <div class="hours-row"><span>Tuesday</span><span>10 AM – 7 PM</span></div>
-          <div class="hours-row"><span>Wednesday</span><span>10 AM – 7 PM</span></div>
-          <div class="hours-row"><span>Thursday</span><span>10 AM – 7 PM</span></div>
-          <div class="hours-row"><span>Friday</span><span>10 AM – 7 PM</span></div>
-          <div class="hours-row"><span>Saturday</span><span>10 AM – 7 PM</span></div>
-          <div class="hours-row"><span>Sunday</span><span>Closed</span></div>
+      <div class="bank-card">
+        <div class="bank-card-label">Transfer payment to this account</div>
+        <div class="bank-top">
+          <div class="bank-logo">ZENITH</div>
+          <div class="bank-name">Zenith Bank<small>Nigeria</small></div>
+        </div>
+        <div class="bank-rows">
+          <div class="bank-row">
+            <span class="bank-row-label">Account Number</span>
+            <div class="bank-row-value"><span class="acct-num">2369040828</span><button class="copy-btn" id="copyBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>Copy</button></div>
+          </div>
+          <div class="bank-row"><span class="bank-row-label">Account Name</span><div class="bank-row-value">Egbewole Toyin Rachael</div></div>
+          <div class="bank-row"><span class="bank-row-label">Bank</span><div class="bank-row-value">Zenith Bank</div></div>
+          <div class="bank-row"><span class="bank-row-label">Amount</span><div class="bank-row-value" style="color:var(--blue);font-size:1.05rem">&#x20A6;10,000</div></div>
         </div>
       </div>
 
-      <!-- Contact -->
-      <div class="sidebar-card">
-        <div class="sidebar-card-title">Contact (RDST). Toyin Racheal Egbewole</div>
-        <a href="tel:+2347039625531" class="contact-link">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.45 2 2 0 0 1 3.59 1.26h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.86A16 16 0 0 0 15.14 16.1l.86-.86a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          +234 703 962 5531
-        </a>
-        <a href="https://wa.me/2347039625531" target="_blank" rel="noopener noreferrer" class="contact-link">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-          WhatsApp Us
-        </a>
-        <a href="mailto:egbewolet@gmail.com" class="contact-link">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          egbewolet@gmail.com
-        </a>
+      <div class="trust-block">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <p><strong>This is a legitimate, verified dental practice — not a scam.</strong>Bright Beam Dental Care is operated by Dr. Toyin Racheal Egbewole, a licensed Registered Dental Surgery Technician (RDST) with over 10 years of practice in Benin City. Once your transfer is confirmed, she will contact you personally within 24 hours. If you have any concerns before paying, please call or WhatsApp on <a href="tel:+2347039625531">+234 703 962 5531</a> or email <a href="mailto:egbewolet@gmail.com">egbewolet@gmail.com</a>.</p>
       </div>
 
-      <!-- Security badge -->
-      <div class="sidebar-card">
-        <div class="security-badge">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          <p><strong>Safe &amp; Verified Practice</strong><br>(RDST). Toyin Racheal Egbewole is a licensed Registered Dental Surgery Technician (RDST) operating from a registered clinic in Benin City.</p>
+      <div class="checks-card">
+        <div class="checks-title">Confirm Before Sending</div>
+        <div class="checks-sub">Please tick both boxes once your transfer is complete.</div>
+        <label class="check-row" id="cr1">
+          <input type="checkbox" id="chk1"/>
+          <span>I have transferred <strong>&#x20A6;10,000</strong> to <strong>Egbewole Toyin Rachael</strong> — Zenith Bank, account <strong>2369040828</strong>.</span>
+        </label>
+        <label class="check-row" id="cr2">
+          <input type="checkbox" id="chk2"/>
+          <span>My details are accurate and I consent to Dr. Egbewole contacting me via the phone number I provided.</span>
+        </label>
+      </div>
+
+      <div class="btn-bar">
+        <button class="btn-back" id="s3Back"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>Back</button>
+        <button class="btn-next wa" id="s3Next" disabled>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          I Have Paid — Send via WhatsApp
+        </button>
+      </div>
+    </section>
+
+    <!-- STEP 4 SUCCESS -->
+    <section class="section" id="s4">
+      <div class="success-screen">
+        <div class="success-ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <h2>You are all set!</h2>
+        <p>Your booking and payment confirmation have been sent to Dr. Egbewole via WhatsApp. She will reach out within <strong>24 hours</strong> to confirm your appointment date and time.</p>
+        <div class="success-info">
+          <div class="success-info-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.45 2 2 0 0 1 3.59 1.26h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.86A16 16 0 0 0 15.14 16.1l.86-.86a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Call or WhatsApp: <a href="tel:+2347039625531">+234 703 962 5531</a></span></div>
+          <div class="success-info-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>Email: <a href="mailto:egbewolet@gmail.com">egbewolet@gmail.com</a></span></div>
+          <div class="success-info-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Airport Road, Ihama, Benin City, Edo State</span></div>
+          <div class="success-info-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Mon – Sat, 10 AM – 7 PM</span></div>
         </div>
+        <a href="index.html" class="btn-home"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>Return to Homepage</a>
       </div>
-
-    </aside>
+    </section>
 
   </main>
 
-
-  <!-- ── FOOTER ───────────────────────────── -->
-  <footer class="c-footer">
-    <div class="c-footer-inner">
-      <div class="c-footer-top">
-        <div class="c-footer-logo">Bright Beam <span>Dental Care</span></div>
-        <div class="c-footer-links">
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">Bright Beam <span>Dental Care</span></div>
+        <div class="footer-links">
           <a href="index.html">Home</a>
           <a href="index.html#services">Services</a>
           <a href="index.html#faq">FAQ</a>
@@ -1681,206 +272,14 @@
           <a href="mailto:egbewolet@gmail.com">egbewolet@gmail.com</a>
         </div>
       </div>
-      <div class="c-footer-bottom">
-        <p>&copy; 2024 Bright Beam Dental Care. Airport Road, Ihama, Benin City, Edo State.</p>
-        <div class="c-footer-credentials">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          (RDST). Toyin Racheal Egbewole — RDST · Registered Dental Surgery Technician
-        </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2024 Bright Beam Dental Care. Airport Road, Ihama, Benin City.</p>
+        <div class="footer-cred"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Dr. Toyin Racheal Egbewole · Registered Dental Surgery Technician (RDST)</div>
       </div>
     </div>
   </footer>
 
-
-  <script>
-    /* ══════════════════════════════════════
-       CONSULTATION PAGE JS
-    ══════════════════════════════════════ */
-
-    // ── STEP NAVIGATION ──────────────────
-    const steps = {
-      indicators: [
-        document.getElementById('step-ind-1'),
-        document.getElementById('step-ind-2'),
-        document.getElementById('step-ind-3'),
-      ],
-      sections: [
-        document.getElementById('step-1'),
-        document.getElementById('step-2'),
-        document.getElementById('step-3'),
-      ],
-    };
-
-    let currentStep = 0;
-
-    function goToStep(idx) {
-      steps.sections[currentStep].classList.remove('visible');
-      steps.indicators[currentStep].classList.remove('active');
-      if (idx > currentStep) steps.indicators[currentStep].classList.add('done');
-
-      currentStep = idx;
-      steps.sections[currentStep].classList.add('visible');
-      steps.indicators[currentStep].classList.add('active');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-
-    // ── FORM VALIDATION ───────────────────
-    function validateStep1() {
-      let valid = true;
-      const fields = [
-        { id: 'firstName',  errId: 'err-firstName' },
-        { id: 'lastName',   errId: 'err-lastName'  },
-        { id: 'phone',      errId: 'err-phone'     },
-        { id: 'age',        errId: 'err-age'       },
-        { id: 'state',      errId: 'err-state'     },
-        { id: 'concern',    errId: 'err-concern'   },
-      ];
-
-      fields.forEach(({ id, errId }) => {
-        const el  = document.getElementById(id);
-        const err = document.getElementById(errId);
-        const val = el.value.trim();
-        if (!val) {
-          el.classList.add('error');
-          err.classList.add('show');
-          valid = false;
-        } else {
-          el.classList.remove('error');
-          err.classList.remove('show');
-        }
-      });
-
-      // Phone: basic 11-digit Nigerian number
-      const phone = document.getElementById('phone').value.trim();
-      if (phone && !/^(\+234|0)[7-9][01]\d{8}$/.test(phone.replace(/\s/g, ''))) {
-        document.getElementById('phone').classList.add('error');
-        document.getElementById('err-phone').textContent = 'Please enter a valid Nigerian phone number';
-        document.getElementById('err-phone').classList.add('show');
-        valid = false;
-      }
-
-      return valid;
-    }
-
-
-    // ── STEP 1 → 2 ───────────────────────
-    document.getElementById('toStep2').addEventListener('click', () => {
-      if (!validateStep1()) return;
-
-      // Update sidebar summary
-      const type = document.querySelector('input[name="consultType"]:checked').value;
-      const typeLabels = { 'in-person': 'Walk-In', 'video-call': 'Video Call', 'whatsapp': 'WhatsApp' };
-      document.querySelector('#summaryType .summary-value').textContent = typeLabels[type] || 'Walk-In';
-
-      goToStep(1);
-    });
-
-
-    // ── STEP 2 → BACK ────────────────────
-    document.getElementById('backToStep1').addEventListener('click', () => {
-      goToStep(0);
-    });
-
-
-    // ── STEP 2 → 3 (WhatsApp redirect) ───
-    document.getElementById('toStep3').addEventListener('click', () => {
-      const paid    = document.getElementById('confirmPaid').checked;
-      const accurate = document.getElementById('confirmAccurate').checked;
-
-      if (!paid || !accurate) {
-        alert('Please confirm both checkboxes before proceeding.');
-        return;
-      }
-
-      // Build WhatsApp message
-      const first   = document.getElementById('firstName').value.trim();
-      const last    = document.getElementById('lastName').value.trim();
-      const phone   = document.getElementById('phone').value.trim();
-      const email   = document.getElementById('email').value.trim() || 'Not provided';
-      const age     = document.getElementById('age').value.trim();
-      const state   = document.getElementById('state').value;
-      const concern = document.getElementById('concern').value;
-      const notes   = document.getElementById('notes').value.trim() || 'None';
-      const type    = document.querySelector('input[name="consultType"]:checked').value;
-      const typeLabels = { 'in-person': 'Walk-In (Clinic)', 'video-call': 'Video Call (Online)', 'whatsapp': 'WhatsApp (Online)' };
-
-      const msg = `Hello (RDST). Toyin Racheal Egbewole,
-
-I have just completed my consultation booking on your website and made the payment of ₦10,000 to Zenith Bank – 2369040828 (Egbewole Toyin Rachael).
-
-*Booking Details:*
-• Name: ${first} ${last}
-• Phone: ${phone}
-• Email: ${email}
-• Age: ${age}
-• State: ${state}
-• Main Concern: ${concern}
-• Consultation Type: ${typeLabels[type]}
-• Notes: ${notes}
-
-Kindly confirm receipt of payment and schedule my appointment. Thank you.`;
-
-      const waURL = `https://wa.me/2347039625531?text=${encodeURIComponent(msg)}`;
-      window.open(waURL, '_blank');
-
-      goToStep(2);
-    });
-
-
-    // ── CONSULTATION TYPE → show online times ──
-    document.querySelectorAll('input[name="consultType"]').forEach(radio => {
-      radio.addEventListener('change', () => {
-        const val = radio.value;
-        const notice = document.getElementById('onlineTimes');
-        if (val === 'video-call' || val === 'whatsapp') {
-          notice.classList.add('show');
-        } else {
-          notice.classList.remove('show');
-        }
-      });
-    });
-
-
-    // ── COPY ACCOUNT NUMBER ───────────────
-    document.getElementById('copyAcct').addEventListener('click', () => {
-      navigator.clipboard.writeText('2369040828').then(() => {
-        const btn = document.getElementById('copyAcct');
-        btn.textContent = 'Copied!';
-        setTimeout(() => {
-          btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:12px;height:12px"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>Copy`;
-        }, 2000);
-      });
-    });
-
-
-    // ── SCROLL FADE-IN ─────────────────────
-    const fadeEls = document.querySelectorAll('.fade-in');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }});
-    }, { threshold: 0.08 });
-    fadeEls.forEach(el => observer.observe(el));
-
-
-    // ── HIGHLIGHT TODAY'S HOURS ────────────
-    const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-    const today = days[new Date().getDay()];
-    document.querySelectorAll('.hours-row').forEach(row => {
-      if (row.querySelector('span:first-child').textContent === today) {
-        row.classList.add('today');
-      }
-    });
-
-    // Remove error on input
-    document.querySelectorAll('.f-input, .f-select').forEach(el => {
-      el.addEventListener('input', () => {
-        el.classList.remove('error');
-        const errId = 'err-' + el.id;
-        const err = document.getElementById(errId);
-        if (err) err.classList.remove('show');
-      });
-    });
-  </script>
-
+</div>
+<script src="consult.js"></script>
 </body>
 </html>
