@@ -120,7 +120,7 @@ document.getElementById('s3Next').addEventListener('click', () => {
   const notes = getVal('notes') || 'None';
 
   const msg =
-`Hello Dr. Egbewole,
+`Hello (RDST). Egbewole,
 
 I have just completed my consultation booking on your website and transferred the ₦10,000 consultation fee to Zenith Bank – 2369040828 (Egbewole Toyin Rachael).
 
